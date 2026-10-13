@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="c1t">
+  <title id="c1t">DOOYOOR 系列 · 当季新款原色靛蓝丹宁</title>
+  <defs>
+    <linearGradient id="c1g1" x1="0" y1="0" x2=".6" y2="1">
+      <stop offset="0" stop-color="#F5F6F8"/>
+      <stop offset="1" stop-color="#E3E6EA"/>
+    </linearGradient>
+    <linearGradient id="c1g2" x1="0" y1="0" x2=".7" y2="1">
+      <stop offset="0" stop-color="#3D5473"/>
+      <stop offset=".6" stop-color="#2B3F5C"/>
+      <stop offset="1" stop-color="#1B2A42"/>
+    </linearGradient>
+    <pattern id="c1p1" width="20" height="20" patternUnits="userSpaceOnUse" patternTransform="rotate(63)">
+      <path d="M0 10h20" fill="none" stroke="#A9BCCF" stroke-opacity=".22" stroke-width="2"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="1000" fill="url(#c1g1)"/>
+  <g transform="rotate(-7 400 500)">
+    <rect x="60" y="150" width="680" height="118" rx="4" fill="url(#c1g2)"/>
+    <rect x="60" y="150" width="680" height="118" rx="4" fill="url(#c1p1)"/>
+    <rect x="150" y="420" width="590" height="92" rx="4" fill="url(#c1g2)" opacity=".85"/>
+    <rect x="150" y="420" width="590" height="92" rx="4" fill="url(#c1p1)"/>
+    <rect x="60" y="720" width="680" height="140" rx="4" fill="url(#c1g2)" opacity=".92"/>
+    <rect x="60" y="720" width="680" height="140" rx="4" fill="url(#c1p1)"/>
+    <path d="M96 208H706" fill="none" stroke="#C97A2B" stroke-width="3" stroke-dasharray="24 16" stroke-linecap="round" stroke-opacity=".8"/>
+  </g>
+</svg>

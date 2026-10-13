@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>认证二手 · 㛊䎟 dooyoor</title>
+  <meta name="description" content="㛊䎟 认证二手丹宁：上衣、裤子、裙子、包包四类，官方回收 → 验真 → 清洁养护 → 二次上链，回收价与售价都写在商品上。">
+  <meta name="theme-color" content="#F5F6F8">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="认证二手 · 㛊䎟 dooyoor">
+  <meta property="og:description" content="㛊䎟 认证二手丹宁：上衣、裤子、裙子、包包四类，官方回收 → 验真 → 清洁养护 → 二次上链，回收价与售价都写在商品上。">
+  <meta property="og:image" content="assets/hero.svg">
+  <link rel="icon" href="assets/logo-mark.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/logo-mark.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="preowned">
+
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <button class="icon-btn menu-toggle" type="button" aria-label="打开菜单" aria-expanded="false" aria-controls="drawer" data-menu-toggle>
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+
+      <a class="brand" href="index.html">
+        <img class="brand-mark" src="assets/logo-mark.svg" alt="" width="26" height="26" decoding="async">
+        <span class="brand-name">dooyoor</span>
+        <span class="brand-cn" aria-hidden="true">㛊䎟</span>
+      </a>
+
+      <nav class="nav-primary" aria-label="主导航">
+        <a class="nav-link" href="index.html" data-nav="index">首页</a>
+        <a class="nav-link" href="shop.html" data-nav="shop">全部商品</a>
+        <a class="nav-link" href="preowned.html" data-nav="preowned">二手商城</a>
+        <a class="nav-link" href="about.html" data-nav="about">品牌故事</a>
+        <a class="nav-link" href="contact.html" data-nav="contact">联系我们</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" type="button" aria-label="搜索商品" aria-expanded="false" aria-controls="search" data-search-toggle>
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        </button>
+        <a class="icon-btn" href="account.html" aria-label="我的" data-account-link>
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c0-3.9 3.1-6 7-6s7 2.1 7 6"/></svg>
+        </a>
+        <a class="icon-btn fav-link" href="shop.html?fav=1" aria-label="我的收藏">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.2S4.6 15.5 4.6 10.4A4.3 4.3 0 0 1 12 7.5a4.3 4.3 0 0 1 7.4 2.9c0 5.1-7.4 9.8-7.4 9.8Z"/></svg>
+          <span class="cart-badge" data-fav-count hidden>0</span>
+        </a>
+        <a class="icon-btn" href="cart.html" aria-label="购物袋">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h12l1 12H5L6 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+          <span class="cart-badge" data-cart-count hidden>0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <div class="drawer" id="drawer" data-drawer hidden>
+    <div class="drawer-backdrop" data-drawer-close></div>
+    <aside class="drawer-panel" role="dialog" aria-modal="true" aria-label="站点菜单">
+      <div class="drawer-head">
+        <span class="drawer-title">dooyoor</span>
+        <button class="icon-btn" type="button" aria-label="关闭菜单" data-drawer-close>
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+      <nav class="drawer-nav" aria-label="移动端导航">
+        <a class="drawer-link" href="index.html" data-nav="index">首页</a>
+        <a class="drawer-link" href="shop.html" data-nav="shop">全部商品</a>
+        <a class="drawer-link" href="preowned.html" data-nav="preowned">二手商城</a>
+        <a class="drawer-link" href="verify.html" data-nav="verify">溯源查询</a>
+        <a class="drawer-link" href="about.html" data-nav="about">品牌故事</a>
+        <a class="drawer-link" href="contact.html" data-nav="contact">联系我们</a>
+        <a class="drawer-link" href="cart.html" data-nav="cart">购物袋</a>
+        <a class="drawer-link" href="shop.html?fav=1">我的收藏</a>
+        <a class="drawer-link" href="account.html">我的账户</a>
+      </nav>
+      <div class="drawer-foot">
+        <p class="drawer-note">满 ¥999 免运费 · 认证二手 7 天无理由</p>
+        <a class="drawer-mail" href="mailto:hello@dooyoor.com">hello@dooyoor.com</a>
+      </div>
+    </aside>
+  </div>
+
+  <div class="search-overlay" id="search" data-search hidden>
+    <div class="search-backdrop" data-search-close></div>
+    <div class="search-panel" role="dialog" aria-modal="true" aria-label="搜索商品">
+      <form class="search-form" action="shop.html" method="get" role="search">
+        <label class="u-sr-only" for="siteSearch">搜索商品</label>
+        <div class="search-field">
+          <input class="input search-input" id="siteSearch" name="q" type="search" placeholder="搜索商品名或品类，如：丹宁" autocomplete="off">
+          <button class="search-clear" type="button" aria-label="清空搜索内容" data-search-clear hidden>
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+          </button>
+        </div>
+        <button class="btn btn--primary" type="submit">搜索</button>
+      </form>
+      <div class="search-suggest">
+        <span class="search-suggest-label">热门搜索</span>
+        <a class="filter-chip" href="shop.html?q=丹宁">丹宁</a>
+        <a class="filter-chip" href="shop.html?q=牛仔">牛仔裤</a>
+        <a class="filter-chip" href="shop.html?q=裙">裙子</a>
+        <a class="filter-chip" href="shop.html?cond=used">认证二手</a>
+      </div>
+      <button class="btn btn--ghost search-close" type="button" data-search-close>关闭</button>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <section class="section section--tight">
+      <div class="container">
+        <div class="page-head">
+          <p class="eyebrow">Certified Pre-owned</p>
+          <h1 class="h1">二手商城</h1>
+          <p class="lead">这里的每一件丹宁都走过同一条路：官方回收 → 验真 → 清洁养护 → 二次上链，之后才重新上架。回收价与售价都写在商品上，没有中间差价黑箱；成色分 A- / B+ / B 三级，卖家信息一律脱敏显示。</p>
+          <p><a class="btn btn--primary" href="account.html?view=orders">发布我的闲置</a></p>
+        </div>
+
+        <p class="chain-note" data-publish-notice hidden></p>
+
+        <div class="shop-toolbar">
+          <div class="filter-bar" role="group" aria-label="按分类筛选">
+            <button class="filter-chip is-active" type="button" data-filter="all" aria-pressed="true">全部</button>
+            <button class="filter-chip" type="button" data-filter="tops" aria-pressed="false">上衣</button>
+            <button class="filter-chip" type="button" data-filter="bottoms" aria-pressed="false">裤子</button>
+            <button class="filter-chip" type="button" data-filter="skirts" aria-pressed="false">裙子</button>
+            <button class="filter-chip" type="button" data-filter="bags" aria-pressed="false">包包</button>
+          </div>
+          <div class="filter-bar" data-grade-bar role="group" aria-label="按成色等级筛选">
+            <button class="filter-chip is-active" type="button" data-grade="all" aria-pressed="true">全部等级</button>
+            <button class="filter-chip" type="button" data-grade="A-" aria-pressed="false">A-</button>
+            <button class="filter-chip" type="button" data-grade="B+" aria-pressed="false">B+</button>
+            <button class="filter-chip" type="button" data-grade="B" aria-pressed="false">B</button>
+          </div>
+          <div class="toolbar-row">
+            <p class="result-count" data-result-count>共 0 件</p>
+            <label class="u-sr-only" for="preownedSort">排序方式</label>
+            <select class="select sort-select" id="preownedSort" data-sort>
+              <option value="featured">推荐</option>
+              <option value="price-asc">价格从低到高</option>
+              <option value="price-desc">价格从高到低</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="product-grid" data-grid></div>
+
+        <div class="empty-state" data-empty hidden>
+          <h2 class="h3">没有找到符合条件的二手</h2>
+          <p>换一个分类或成色等级试试，也可以清除筛选看看全部在售的认证二手。</p>
+          <button class="btn btn--primary" type="button" data-clear-filter>清除筛选</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--paper2">
+      <div class="container">
+        <div class="chain-panel">
+          <div class="chain-head">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 5-3 8-7 9-4-1-7-4-7-9V6l7-3Z"/><path d="M9 12l2 2 4-4"/></svg>
+            <span class="chain-title">演示说明</span>
+          </div>
+          <p class="chain-note">余额为虚拟余额，不涉及真实资金；数据仅保存在本机浏览器。</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <p class="footer-logo">dooyoor<span class="footer-cn">㛊䎟</span></p>
+          <p class="footer-tagline">懂你的美，更懂你的身。东方古字为名，西方丹宁为体。</p>
+          <p class="footer-social">
+            <a class="footer-link" href="contact.html">微信 dooyoor</a>
+            <a class="footer-link" href="contact.html">小红书 @dooyoor</a>
+          </p>
+        </div>
+        <div class="footer-col">
+          <h2 class="footer-title">购物</h2>
+          <a class="footer-link" href="shop.html">全部商品</a>
+          <a class="footer-link" href="shop.html?c=tops">上衣</a>
+          <a class="footer-link" href="shop.html?c=bottoms">裤子</a>
+          <a class="footer-link" href="shop.html?c=skirts">裙子</a>
+          <a class="footer-link" href="shop.html?c=bags">包包</a>
+        </div>
+        <div class="footer-col">
+          <h2 class="footer-title">帮助</h2>
+          <a class="footer-link" href="contact.html#faq">常见问题</a>
+          <a class="footer-link" href="verify.html">溯源查询</a>
+          <a class="footer-link" href="contact.html#faq">尺码与版型</a>
+          <a class="footer-link" href="contact.html#faq">配送与退换</a>
+          <a class="footer-link" href="contact.html">联系我们</a>
+        </div>
+        <div class="footer-col footer-news">
+          <h2 class="footer-title">订阅新品通知</h2>
+          <p class="footer-note">每月一封信，只讲新面料与新款式，不发广告。</p>
+          <form class="news-form" data-news-form novalidate>
+            <label class="u-sr-only" for="newsEmail">邮箱地址</label>
+            <input class="input" id="newsEmail" name="email" type="email" placeholder="你的邮箱" autocomplete="email" required>
+            <button class="btn btn--outline" type="submit">订阅</button>
+          </form>
+          <p class="form-note" data-news-note></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span data-year>2025</span> dooyoor 㛊䎟 · 保留所有权利</p>
+        <p class="footer-legal"><a class="footer-link" href="#">隐私政策</a><a class="footer-link" href="#">服务条款</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <nav class="bottom-nav" aria-label="底部导航">
+    <a class="bottom-nav-item" href="index.html" data-nav="index">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-6 8 6"/><path d="M6 10v9h12v-9"/></svg>
+      <span class="bottom-nav-label">首页</span>
+    </a>
+    <a class="bottom-nav-item" href="shop.html" data-nav="shop">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16l-1.5 13h-13L4 6Z"/><path d="M9 6a3 3 0 0 1 6 0"/></svg>
+      <span class="bottom-nav-label">商品</span>
+    </a>
+    <a class="bottom-nav-item" href="preowned.html" data-nav="preowned">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 0 1 13-6"/><path d="M20 12a8 8 0 0 1-13 6"/><path d="M17 3v3h-3"/><path d="M7 21v-3h3"/></svg>
+      <span class="bottom-nav-label">二手</span>
+    </a>
+    <a class="bottom-nav-item" href="cart.html" data-nav="cart">
+      <span class="bottom-nav-icon-wrap">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h12l1 12H5L6 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <span class="cart-badge" data-cart-count hidden>0</span>
+      </span>
+      <span class="bottom-nav-label">购物袋</span>
+    </a>
+    <a class="bottom-nav-item" href="account.html" data-nav="account">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c0-3.9 3.1-6 7-6s7 2.1 7 6"/></svg>
+      <span class="bottom-nav-label">我的</span>
+    </a>
+  </nav>
+
+  <div class="toast" data-toast role="status" aria-live="polite"></div>
+
+  <div class="admin-modal" data-publish-modal role="dialog" aria-modal="true" aria-labelledby="publishModalTitle" hidden>
+    <div class="admin-modal-backdrop" data-publish-close></div>
+    <div class="admin-modal-panel">
+      <div class="admin-modal-head">
+        <h2 class="admin-modal-title" id="publishModalTitle">发布二手</h2>
+        <button class="icon-btn" type="button" data-publish-close aria-label="关闭发布弹窗">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+
+      <div class="admin-modal-body form">
+        <div class="field">
+          <span class="field-label">转让商品（由订单带出，不可修改）</span>
+          <p class="order-name" data-publish-name></p>
+          <p class="admin-row-meta"><span>原价 <span data-publish-origin></span></span></p>
+        </div>
+
+        <div class="field">
+          <label class="field-label" for="publishPrice">转让价格（元）<span class="req" aria-hidden="true">*</span></label>
+          <input class="input" id="publishPrice" name="price" type="number" inputmode="decimal" min="1" step="1" autocomplete="off" required>
+        </div>
+
+        <div class="field">
+          <label class="field-label" for="publishNote">成色说明<span class="req" aria-hidden="true">*</span></label>
+          <textarea class="textarea" id="publishNote" name="note" rows="4" maxlength="200" placeholder="例如：买大了一码，只穿过两次" required></textarea>
+        </div>
+
+        <p class="field-error" data-publish-error role="alert"></p>
+      </div>
+
+      <div class="admin-modal-foot">
+        <button class="btn btn--outline" type="button" data-publish-cancel>取消</button>
+        <button class="btn btn--primary" type="button" data-publish-submit>确认发布</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/site-config.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/fav.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/wallet.js"></script>
+  <script src="js/orders.js"></script>
+  <script src="js/preowned.js"></script>
+  <script src="js/preowned-page.js"></script>
+</body>
+</html>

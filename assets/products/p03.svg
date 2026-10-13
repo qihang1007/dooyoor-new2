@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="p03t" width="800" height="1000">
+<title id="p03t">DOOYOOR 直筒赤耳牛仔裤 · 13.5oz 原色靛蓝（未水洗）</title>
+<defs>
+<linearGradient id="p03g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5F6F8"/><stop offset="1" stop-color="#E3E6EA"/></linearGradient>
+<linearGradient id="p03g2" x1=".05" y1="0" x2=".95" y2="1"><stop offset="0" stop-color="#3D5473"/><stop offset=".45" stop-color="#2B3F5C"/><stop offset="1" stop-color="#1B2A42"/></linearGradient>
+<linearGradient id="p03g3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#26374F"/><stop offset="1" stop-color="#1B2A42"/></linearGradient>
+<linearGradient id="p03g4" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3D5473"/><stop offset="1" stop-color="#22304A"/></linearGradient>
+<radialGradient id="p03g5" cx=".35" cy=".3" r=".85"><stop offset="0" stop-color="#C97A2B"/><stop offset="1" stop-color="#A85A16"/></radialGradient>
+<filter id="p03f1" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="7"/></filter>
+</defs>
+<rect width="800" height="1000" fill="url(#p03g1)"/>
+<ellipse cx="400" cy="958" rx="252" ry="26" fill="#0E1620" opacity=".12" filter="url(#p03f1)"/>
+<path d="M222,112 C210,146 204,196 204,262 L204,934 L392,934 L392,468 Q400,430 408,468 L408,934 L596,934 L596,262 C596,196 590,146 578,112 Z" fill="url(#p03g2)"/>
+<path d="M400,112 L578,112 C590,146 596,196 596,262 L596,934 L408,934 L408,468 Q400,430 400,452 Z" fill="#0E1620" opacity=".13"/>
+<ellipse cx="296" cy="250" rx="118" ry="176" fill="#FFFFFF" opacity=".05" filter="url(#p03f1)"/>
+<rect x="221" y="58" width="358" height="54" rx="3" fill="url(#p03g3)"/>
+<rect x="221" y="58" width="358" height="9" fill="#D9C2A0" opacity=".12"/>
+<path d="M226,70 H574 M226,102 H574" fill="none" stroke="#C97A2B" stroke-width="2" stroke-dasharray="6 5"/>
+<path d="M228,52 h16 v62 h-16 z M310,52 h16 v62 h-16 z M392,52 h16 v62 h-16 z M474,52 h16 v62 h-16 z M556,52 h16 v62 h-16 z" fill="url(#p03g4)" stroke="#C97A2B" stroke-width="1.6" stroke-dasharray="4 4"/>
+<path d="M232,152 Q288,130 318,178 M568,152 Q512,130 482,178" fill="none" stroke="#0E1620" stroke-width="3" opacity=".1"/>
+<path d="M382,112 L418,112 L418,266 Q416,300 386,296 L382,112 Z" fill="#0E1620" opacity=".22"/>
+<path d="M384,118 V248 Q385,284 414,286" fill="none" stroke="#C97A2B" stroke-width="2" stroke-dasharray="6 5"/>
+<path d="M420,128 V266 M418,138 h15 M418,162 h15 M418,186 h15 M418,210 h15 M418,234 h15 M418,258 h15" fill="none" stroke="#D9C2A0" stroke-width="1.5" opacity=".6"/>
+<path d="M242,120 Q266,200 304,258 M558,120 Q534,200 496,258" fill="none" stroke="#0E1620" stroke-width="3" opacity=".16"/>
+<path d="M240,116 Q264,196 302,254 M560,116 Q536,196 498,254" fill="none" stroke="#C97A2B" stroke-width="2" stroke-dasharray="6 5"/>
+<path d="M508,124 L560,142 L552,196 L512,180 Z" fill="#2B3F5C"/>
+<path d="M511,129 L556,145 L549,191 L515,177" fill="none" stroke="#C97A2B" stroke-width="1.8" stroke-dasharray="6 5"/>
+<g><circle cx="240" cy="116" r="6" fill="#A85A16"/><circle cx="240" cy="116" r="3.4" fill="#C97A2B"/><circle cx="238.4" cy="114.2" r="1.6" fill="#D9C2A0" opacity=".9"/><circle cx="302" cy="254" r="6" fill="#A85A16"/><circle cx="302" cy="254" r="3.4" fill="#C97A2B"/><circle cx="300.4" cy="252.2" r="1.6" fill="#D9C2A0" opacity=".9"/><circle cx="560" cy="116" r="6" fill="#A85A16"/><circle cx="560" cy="116" r="3.4" fill="#C97A2B"/><circle cx="558.4" cy="114.2" r="1.6" fill="#D9C2A0" opacity=".9"/><circle cx="498" cy="254" r="6" fill="#A85A16"/><circle cx="498" cy="254" r="3.4" fill="#C97A2B"/><circle cx="496.4" cy="252.2" r="1.6" fill="#D9C2A0" opacity=".9"/></g>
+<circle cx="400" cy="128" r="10.5" fill="#0E1620" opacity=".35"/><circle cx="400" cy="126" r="10" fill="#A85A16"/><circle cx="400" cy="126" r="6" fill="url(#p03g5)"/><circle cx="396.5" cy="122.5" r="2.6" fill="#D9C2A0" opacity=".85"/>
+<path d="M226,286 V930 M574,286 V930 M392,470 V930 M408,470 V930" fill="none" stroke="#C97A2B" stroke-width="2" stroke-dasharray="6 5"/>
+<path d="M364,428 Q400,494 436,428" fill="none" stroke="#C97A2B" stroke-width="2" stroke-dasharray="6 5"/>
+<path d="M206,282 h16 v650 h-16 z M580,282 h16 v650 h-16 z" fill="#3D5473"/>
+<path d="M204,282 V932 M596,282 V932" fill="none" stroke="#0E1620" stroke-width="2" opacity=".35"/>
+<path d="M216,286 V928" fill="none" stroke="#D9C2A0" stroke-width="1.6" opacity=".18"/>
+<path d="M207,300h14M207,332h14M207,364h14M207,396h14M207,428h14M207,460h14M207,492h14M207,524h14M207,556h14M207,588h14M207,620h14M207,652h14M207,684h14M207,716h14M207,748h14M207,780h14M207,812h14M207,844h14M207,876h14M207,908h14" fill="none" stroke="#E3E6EA" stroke-width="1.4" opacity=".75"/>
+<path d="M583,300h13M583,332h13M583,364h13M583,396h13M583,428h13M583,460h13M583,492h13M583,524h13M583,556h13M583,588h13M583,620h13M583,652h13M583,684h13M583,716h13M583,748h13M583,780h13M583,812h13M583,844h13M583,876h13M583,908h13" fill="none" stroke="#E3E6EA" stroke-width="1.4" opacity=".75"/>
+<path d="M204,894 h188 v40 h-188 z M408,894 h188 v40 h-188 z" fill="#0E1620" opacity=".14"/>
+<path d="M208,912 H388 M412,912 H592" fill="none" stroke="#C97A2B" stroke-width="2" stroke-dasharray="6 5"/>
+<path d="M204,932 H392 M408,932 H596" fill="none" stroke="#0E1620" stroke-width="2" opacity=".3"/>
+<ellipse cx="300" cy="700" rx="62" ry="210" fill="#FFFFFF" opacity=".05"/>
+<path d="M282,300 Q330,326 352,392 M290,270 Q340,300 366,354 M272,332 Q316,354 336,406 M518,300 Q470,326 448,392 M510,270 Q460,300 434,354 M528,332 Q484,354 464,406" fill="none" stroke="#A9BCCF" stroke-width="7" stroke-linecap="round" opacity=".14" filter="url(#p03f1)"/>
+</svg>

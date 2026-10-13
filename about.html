@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>品牌故事 · 㛊䎟 dooyoor</title>
+  <meta name="description" content="2026 年我们在古籍里翻到两个几乎被遗忘的字——㛊与䎟。以东方古字为名，用西方丹宁为体，做适配当代都市女性的松弛感丹宁女装。">
+  <meta name="theme-color" content="#F5F6F8">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="品牌故事 · 㛊䎟 dooyoor">
+  <meta property="og:description" content="2026 年我们在古籍里翻到两个几乎被遗忘的字——㛊与䎟。以东方古字为名，用西方丹宁为体，做适配当代都市女性的松弛感丹宁女装。">
+  <meta property="og:image" content="assets/hero.svg">
+  <link rel="icon" href="assets/logo-mark.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/logo-mark.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="about">
+
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <button class="icon-btn menu-toggle" type="button" aria-label="打开菜单" aria-expanded="false" aria-controls="drawer" data-menu-toggle>
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+
+      <a class="brand" href="index.html">
+        <img class="brand-mark" src="assets/logo-mark.svg" alt="" width="26" height="26" decoding="async">
+        <span class="brand-name">dooyoor</span>
+        <span class="brand-cn" aria-hidden="true">㛊䎟</span>
+      </a>
+
+      <nav class="nav-primary" aria-label="主导航">
+        <a class="nav-link" href="index.html" data-nav="index">首页</a>
+        <a class="nav-link" href="shop.html" data-nav="shop">全部商品</a>
+        <a class="nav-link" href="preowned.html" data-nav="preowned">二手商城</a>
+        <a class="nav-link" href="about.html" data-nav="about">品牌故事</a>
+        <a class="nav-link" href="contact.html" data-nav="contact">联系我们</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" type="button" aria-label="搜索商品" aria-expanded="false" aria-controls="search" data-search-toggle>
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        </button>
+        <a class="icon-btn" href="account.html" aria-label="我的" data-account-link>
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c0-3.9 3.1-6 7-6s7 2.1 7 6"/></svg>
+        </a>
+        <a class="icon-btn fav-link" href="shop.html?fav=1" aria-label="我的收藏">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.2S4.6 15.5 4.6 10.4A4.3 4.3 0 0 1 12 7.5a4.3 4.3 0 0 1 7.4 2.9c0 5.1-7.4 9.8-7.4 9.8Z"/></svg>
+          <span class="cart-badge" data-fav-count hidden>0</span>
+        </a>
+        <a class="icon-btn" href="cart.html" aria-label="购物袋">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h12l1 12H5L6 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+          <span class="cart-badge" data-cart-count hidden>0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <div class="drawer" id="drawer" data-drawer hidden>
+    <div class="drawer-backdrop" data-drawer-close></div>
+    <aside class="drawer-panel" role="dialog" aria-modal="true" aria-label="站点菜单">
+      <div class="drawer-head">
+        <span class="drawer-title">dooyoor</span>
+        <button class="icon-btn" type="button" aria-label="关闭菜单" data-drawer-close>
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+      <nav class="drawer-nav" aria-label="移动端导航">
+        <a class="drawer-link" href="index.html" data-nav="index">首页</a>
+        <a class="drawer-link" href="shop.html" data-nav="shop">全部商品</a>
+        <a class="drawer-link" href="preowned.html" data-nav="preowned">二手商城</a>
+        <a class="drawer-link" href="verify.html" data-nav="verify">溯源查询</a>
+        <a class="drawer-link" href="about.html" data-nav="about">品牌故事</a>
+        <a class="drawer-link" href="contact.html" data-nav="contact">联系我们</a>
+        <a class="drawer-link" href="cart.html" data-nav="cart">购物袋</a>
+        <a class="drawer-link" href="shop.html?fav=1">我的收藏</a>
+        <a class="drawer-link" href="account.html">我的账户</a>
+      </nav>
+      <div class="drawer-foot">
+        <p class="drawer-note">满 ¥999 免运费 · 认证二手 7 天无理由</p>
+        <a class="drawer-mail" href="mailto:hello@dooyoor.com">hello@dooyoor.com</a>
+      </div>
+    </aside>
+  </div>
+
+  <div class="search-overlay" id="search" data-search hidden>
+    <div class="search-backdrop" data-search-close></div>
+    <div class="search-panel" role="dialog" aria-modal="true" aria-label="搜索商品">
+      <form class="search-form" action="shop.html" method="get" role="search">
+        <label class="u-sr-only" for="siteSearch">搜索商品</label>
+        <div class="search-field">
+          <input class="input search-input" id="siteSearch" name="q" type="search" placeholder="搜索商品名或品类，如：丹宁" autocomplete="off">
+          <button class="search-clear" type="button" aria-label="清空搜索内容" data-search-clear hidden>
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+          </button>
+        </div>
+        <button class="btn btn--primary" type="submit">搜索</button>
+      </form>
+      <div class="search-suggest">
+        <span class="search-suggest-label">热门搜索</span>
+        <a class="filter-chip" href="shop.html?q=丹宁">丹宁</a>
+        <a class="filter-chip" href="shop.html?q=牛仔">牛仔裤</a>
+        <a class="filter-chip" href="shop.html?q=裙">裙子</a>
+        <a class="filter-chip" href="shop.html?cond=used">认证二手</a>
+      </div>
+      <button class="btn btn--ghost search-close" type="button" data-search-close>关闭</button>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <section class="about-hero">
+      <div class="container">
+        <div class="about-hero-media">
+          <img src="assets/about-workshop.svg" alt="dooyoor 上海丹宁工坊：六米长的裁床、竖立的线架与几卷待裁的靛蓝丹宁" width="1200" height="800" decoding="async">
+        </div>
+        <p class="eyebrow">品牌故事 · 2026 年至今</p>
+        <h1 class="h1">东方古字为名，西方丹宁为体</h1>
+        <p class="lead">我们把古籍里的两个字，缝进西方工装的面料里——用丹宁硬朗的骨架，承托东方剪裁的松弛。</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">由来</p>
+          <h2 class="h2">值这个价，要能被查证</h2>
+          <p class="lead">下面是 dooyoor 㛊䎟 自己的说法，没有修饰，也没有形容词。</p>
+        </div>
+        <div class="prose" data-about-story></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">三种场景</p>
+          <h2 class="h2">一件就好，不用中途换衣</h2>
+        </div>
+        <div class="pillars">
+          <article class="pillar">
+            <h3 class="h3">版型妥帖不紧绷，办公室一整天都舒展。</h3>
+            <p>不用刻意凹造型，通勤也能穿出自然质感。</p>
+            <p class="chain-note">一件适配早高峰地铁、会议室、下班小聚，不用中途换衣。</p>
+          </article>
+          <article class="pillar">
+            <h3 class="h3">软乎乎的面料，裹住周末所有松弛时刻。</h3>
+            <p>逛老街、喝咖啡、赴野餐，每一步都自在好看。</p>
+            <p class="chain-note">不被风格定义，你的日常穿搭本来就很好看。</p>
+          </article>
+          <article class="pillar">
+            <h3 class="h3">复刻老剪裁，却完全适配当代生活的穿搭习惯。</h3>
+            <p>把旧时光里的优雅，穿成今天的日常。</p>
+            <p class="chain-note">复古不挑人，普通身形也能穿出画报里的氛围感。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--paper2" id="chain">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">溯源链</p>
+          <h2 class="h2">四个环节，全部上链</h2>
+          <p class="lead">每件单品出厂即写入溯源链，生成唯一溯源码，印在吊牌内侧。记录写入后不可修改，我们也改不了。</p>
+        </div>
+        <div class="chain-panel">
+          <div class="chain-head">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 5-3 8-7 9-4-1-7-4-7-9V6l7-3Z"/><path d="M9 12l2 2 4-4"/></svg>
+            <span class="chain-title">溯源机制</span>
+          </div>
+          <div class="verify-steps" data-about-chain-steps></div>
+          <p class="chain-note">网络 Polygon PoS · 溯源码以 DY- 开头 · 查询无需登录，也不收费。</p>
+          <div class="chain-actions">
+            <a class="btn btn--primary" href="verify.html">去查询溯源码</a>
+            <a class="btn btn--outline" href="contact.html#faq">溯源常见问题</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">时间线</p>
+          <h2 class="h2">四件事</h2>
+          <p class="lead">我们没有太多里程碑，能写下来的只有这四件。</p>
+        </div>
+        <ol class="timeline" data-about-timeline></ol>
+      </div>
+    </section>
+
+    <section class="section section--paper2" id="pre-owned">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">认证二手</p>
+          <h2 class="h2">回收、验真、养护、二次上链</h2>
+          <p class="lead">回收 · 验真 · 养护 · 二次上链——让一件丹宁被穿得更久。</p>
+        </div>
+        <div class="lifecycle">
+          <div class="chain-head">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 0 1 13-6"/><path d="M20 12a8 8 0 0 1-13 6"/><path d="M17 3v3h-3"/><path d="M7 21v-3h3"/></svg>
+            <span class="chain-title">一条流转记录长什么样</span>
+          </div>
+          <ol class="lifecycle-list">
+            <li class="lifecycle-item">
+              <span class="lifecycle-marker" aria-hidden="true"></span>
+              <p class="lifecycle-date">第 1 天</p>
+              <p class="lifecycle-title">收件与验真</p>
+              <p class="lifecycle-desc">寄到上海仓，核验吊牌内侧的溯源码与链上记录是否一致，非正品原路退回。</p>
+            </li>
+            <li class="lifecycle-item">
+              <span class="lifecycle-marker" aria-hidden="true"></span>
+              <p class="lifecycle-date">第 3 天</p>
+              <p class="lifecycle-title">成色评级</p>
+              <p class="lifecycle-desc">按 A / B+ / B 三级判定，有明显使用痕迹的会拍照并在链上注明瑕疵位置。</p>
+            </li>
+            <li class="lifecycle-item">
+              <span class="lifecycle-marker" aria-hidden="true"></span>
+              <p class="lifecycle-date">第 5 至 10 天</p>
+              <p class="lifecycle-title">清洁与养护</p>
+              <p class="lifecycle-desc">丹宁单独水洗，不与其他面料混洗：反面冷水轻柔档，中性洗涤剂，按深浅色分开，避免串色。</p>
+            </li>
+            <li class="lifecycle-item">
+              <span class="lifecycle-marker" aria-hidden="true"></span>
+              <p class="lifecycle-date">第 12 天</p>
+              <p class="lifecycle-title">二次上链</p>
+              <p class="lifecycle-desc">追加一条流转记录，写明回收时间与成色等级，历史记录仍然只增不改。</p>
+            </li>
+            <li class="lifecycle-item">
+              <span class="lifecycle-marker" aria-hidden="true"></span>
+              <p class="lifecycle-date">重新上架</p>
+              <p class="lifecycle-title">明码标价</p>
+              <p class="lifecycle-desc">回收价与售价都写在商品页上，两者之间的差额只用于验真、养护与仓配。</p>
+            </li>
+          </ol>
+          <p class="chain-note">上一位穿着者穿了约 40 次，这些记录都会留在链上——下一位买家在商品页就能看到。</p>
+          <div class="chain-actions">
+            <a class="btn btn--outline" href="shop.html?cond=used">看看在售的认证二手</a>
+            <a class="btn btn--ghost" href="contact.html#faq">二手成色怎么算</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">三原则</p>
+          <h2 class="h2">我们怎么判断一件衣服</h2>
+          <p class="lead">款式可以少，这三条不能让。</p>
+        </div>
+        <ul class="pillars" data-about-pillars></ul>
+      </div>
+    </section>
+
+    <section class="section section--paper2">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">面料</p>
+          <h2 class="h2">两个字，一种面料</h2>
+          <p class="lead">只用这三种丹宁做主力，每一种都能说清产地、盎司克重与为什么值这个价。不混低价的替代面料来压成本，也不靠名字抬价。</p>
+        </div>
+        <div class="fabric-grid">
+          <div class="fabric-card">
+            <p class="fabric-en">East · 㛊</p>
+            <h3 class="h3">东 · 㛊</h3>
+            <p>精准感知，温柔揣度。腰线的弧度比对过数百位普通女性的日常身形，肩线落一点、腰身收一点，不追求极端效果，只求贴合。</p>
+          </div>
+          <div class="fabric-card">
+            <p class="fabric-en">West · Denim</p>
+            <h3 class="h3">西 · 丹宁</h3>
+            <p>日本冈山赤耳丹宁、绳染靛蓝 8 次、铜色压线、实心铜铆钉。西方工装的骨架，越穿越有属于你的褪色。</p>
+          </div>
+          <div class="fabric-card">
+            <p class="fabric-en">Both · Soft &amp; Tough</p>
+            <h3 class="h3">合 · 柔与韧</h3>
+            <p>丹宁的硬朗被东方剪裁软化：落肩、微收腰、阔而不垮。硬的面料，穿出松弛的轮廓。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Lookbook</p>
+          <h2 class="h2">穿在身上的样子</h2>
+          <p class="lead">同一件丹宁衬衫和同一条牛仔裤，穿过一个夏天和一个冬天之后的样子。</p>
+        </div>
+        <p class="quote">一衣藏古意，柔媚自天成。</p>
+        <div class="lookbook" data-reveal>
+          <div class="look-card">
+            <img src="assets/look-01.svg" alt="dooyoor 造型：落肩丹宁衬衫与高腰阔腿牛仔裤的搭配" width="800" height="1000" loading="lazy" decoding="async">
+          </div>
+          <div class="look-card">
+            <img src="assets/look-02.svg" alt="dooyoor 造型：原色丹宁夹克与直筒赤耳牛仔裤的搭配，膝盖与口袋边缘已自然褪色" width="800" height="1000" loading="lazy" decoding="async">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--paper2">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">定价</p>
+          <h2 class="h2">价格是算出来的</h2>
+          <p class="lead">一件衣服的钱由三部分构成，比例不会有太大浮动。</p>
+        </div>
+        <p class="quote">我们把钱花在面料、版型与工费上，而不是广告。</p>
+        <div class="cost-list">
+          <div class="cost-row">
+            <span>面料</span>
+            <span class="val">45%</span>
+            <span class="cost-bar"><span></span></span>
+          </div>
+          <div class="cost-row">
+            <span>版型打样</span>
+            <span class="val">25%</span>
+            <span class="cost-bar"><span></span></span>
+          </div>
+          <div class="cost-row">
+            <span>工费</span>
+            <span class="val">30%</span>
+            <span class="cost-bar"><span></span></span>
+          </div>
+        </div>
+        <p class="lead">没有经销商加价，也很少投广告。上衣 ¥460–1280，裤子 ¥580–1080，裙子 ¥780–920，包包 ¥220–460；认证二手按成色重新定价，回收价与售价都写在商品页上。</p>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container u-center">
+        <p class="eyebrow">下一步</p>
+        <h2 class="h2">先看丹宁参数，再决定</h2>
+        <p class="lead">现在一共 8 款在售，其中 2 款是认证二手。每一款的丹宁产地、盎司克重、水洗工艺与版型说明都写在商品页上。</p>
+        <p><a class="btn btn--primary" href="shop.html">看看全部商品</a></p>
+        <p><a class="btn btn--outline" href="verify.html">查询溯源码</a></p>
+        <p class="chain-note">溯源码印在吊牌内侧，以 DY- 开头。输入后即可看到这件衣服的完整记录。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <p class="footer-logo">dooyoor<span class="footer-cn">㛊䎟</span></p>
+          <p class="footer-tagline">懂你的美，更懂你的身。东方古字为名，西方丹宁为体。</p>
+          <p class="footer-social">
+            <a class="footer-link" href="contact.html">微信 dooyoor</a>
+            <a class="footer-link" href="contact.html">小红书 @dooyoor</a>
+          </p>
+        </div>
+        <div class="footer-col">
+          <h2 class="footer-title">购物</h2>
+          <a class="footer-link" href="shop.html">全部商品</a>
+          <a class="footer-link" href="shop.html?c=tops">上衣</a>
+          <a class="footer-link" href="shop.html?c=bottoms">裤子</a>
+          <a class="footer-link" href="shop.html?c=skirts">裙子</a>
+          <a class="footer-link" href="shop.html?c=bags">包包</a>
+        </div>
+        <div class="footer-col">
+          <h2 class="footer-title">帮助</h2>
+          <a class="footer-link" href="contact.html#faq">常见问题</a>
+          <a class="footer-link" href="verify.html">溯源查询</a>
+          <a class="footer-link" href="contact.html#faq">尺码与版型</a>
+          <a class="footer-link" href="contact.html#faq">配送与退换</a>
+          <a class="footer-link" href="contact.html">联系我们</a>
+        </div>
+        <div class="footer-col footer-news">
+          <h2 class="footer-title">订阅新品通知</h2>
+          <p class="footer-note">每月一封信，只讲新面料与新款式，不发广告。</p>
+          <form class="news-form" data-news-form novalidate>
+            <label class="u-sr-only" for="newsEmail">邮箱地址</label>
+            <input class="input" id="newsEmail" name="email" type="email" placeholder="你的邮箱" autocomplete="email" required>
+            <button class="btn btn--outline" type="submit">订阅</button>
+          </form>
+          <p class="form-note" data-news-note></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span data-year>2025</span> dooyoor 㛊䎟 · 保留所有权利</p>
+        <p class="footer-legal"><a class="footer-link" href="#">隐私政策</a><a class="footer-link" href="#">服务条款</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <nav class="bottom-nav" aria-label="底部导航">
+    <a class="bottom-nav-item" href="index.html" data-nav="index">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-6 8 6"/><path d="M6 10v9h12v-9"/></svg>
+      <span class="bottom-nav-label">首页</span>
+    </a>
+    <a class="bottom-nav-item" href="shop.html" data-nav="shop">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16l-1.5 13h-13L4 6Z"/><path d="M9 6a3 3 0 0 1 6 0"/></svg>
+      <span class="bottom-nav-label">商品</span>
+    </a>
+    <a class="bottom-nav-item" href="preowned.html" data-nav="preowned">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 0 1 13-6"/><path d="M20 12a8 8 0 0 1-13 6"/><path d="M17 3v3h-3"/><path d="M7 21v-3h3"/></svg>
+      <span class="bottom-nav-label">二手</span>
+    </a>
+    <a class="bottom-nav-item" href="cart.html" data-nav="cart">
+      <span class="bottom-nav-icon-wrap">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h12l1 12H5L6 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <span class="cart-badge" data-cart-count hidden>0</span>
+      </span>
+      <span class="bottom-nav-label">购物袋</span>
+    </a>
+    <a class="bottom-nav-item" href="account.html" data-nav="account">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c0-3.9 3.1-6 7-6s7 2.1 7 6"/></svg>
+      <span class="bottom-nav-label">我的</span>
+    </a>
+  </nav>
+  <div class="toast" data-toast role="status" aria-live="polite"></div>
+
+  <script src="js/site-config.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/fav.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/wallet.js"></script>
+  <script src="js/orders.js"></script>
+  <script src="js/preowned.js"></script>
+  <script src="js/about.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="p05t">
+  <title id="p05t">DOOYOOR A 字丹宁半身裙 · 10oz 硬挺石洗浅蓝</title>
+  <desc>石洗浅蓝 A 字半身裙，宽腰头、五裤鼻、两档调节扣、前中五粒铜扣门襟、方形贴袋与双线锁边下摆。</desc>
+  <defs>
+    <linearGradient id="p05g1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F5F6F8"/>
+      <stop offset="1" stop-color="#E3E6EA"/>
+    </linearGradient>
+    <linearGradient id="p05g2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#A9BCCF"/>
+      <stop offset="1" stop-color="#7C93AE"/>
+    </linearGradient>
+    <linearGradient id="p05g3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3D5473"/>
+      <stop offset="1" stop-color="#2B3F5C"/>
+    </linearGradient>
+    <linearGradient id="p05g4" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#EDEFF2" stop-opacity=".2"/>
+      <stop offset=".5" stop-color="#EDEFF2" stop-opacity="0"/>
+      <stop offset="1" stop-color="#1B2A42" stop-opacity=".24"/>
+    </linearGradient>
+    <radialGradient id="p05g5" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#1B2A42" stop-opacity=".3"/>
+      <stop offset="1" stop-color="#1B2A42" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#p05g1)"/>
+  <ellipse cx="400" cy="828" rx="246" ry="30" fill="url(#p05g5)"/>
+  <path d="M250 192 C 240 410, 186 630, 134 800 L666 800 C 614 630, 560 410, 550 192 Z" fill="url(#p05g2)"/>
+  <path d="M148 756 C 320 774, 480 774, 652 756 L666 800 L134 800 Z" fill="#3D5473" opacity=".42"/>
+  <path d="M536 194 L646 796 L666 800 L560 194 Z" fill="#0E1620" opacity=".1"/>
+  <g fill="#A9BCCF" opacity=".16">
+    <path d="M296 192 L238 798 L262 798 L316 192 Z"/>
+    <path d="M504 192 L562 798 L538 798 L484 192 Z"/>
+    <path d="M382 192 L366 798 L392 798 L414 192 Z"/>
+  </g>
+  <g fill="#7C93AE" stroke="#1B2A42" stroke-opacity=".22" stroke-width="1.5">
+    <rect x="258" y="300" width="84" height="104" rx="5"/>
+    <rect x="458" y="300" width="84" height="104" rx="5"/>
+  </g>
+  <path d="M258 300 L342 300 L342 322 L258 322 Z" fill="#1B2A42" opacity=".12"/>
+  <path d="M458 300 L542 300 L542 322 L458 322 Z" fill="#1B2A42" opacity=".12"/>
+  <path d="M377 192 L423 192 L423 620 L377 620 Z" fill="#3D5473"/>
+  <rect x="246" y="150" width="308" height="44" rx="3" fill="url(#p05g3)"/>
+  <path d="M246 150 L554 150 L554 158 L246 158 Z" fill="#A9BCCF" opacity=".3"/>
+  <g fill="#2B3F5C">
+    <rect x="262" y="145" width="11" height="54"/>
+    <rect x="318" y="145" width="11" height="54"/>
+    <rect x="374" y="145" width="11" height="54"/>
+    <rect x="430" y="145" width="11" height="54"/>
+    <rect x="486" y="145" width="11" height="54"/>
+  </g>
+  <g fill="#A85A16">
+    <circle cx="512" cy="172" r="5.5"/>
+    <circle cx="533" cy="172" r="5.5"/>
+  </g>
+  <path d="M508 169 a5 5 0 0 1 6-3 M529 169 a5 5 0 0 1 6-3" fill="none" stroke="#D9C2A0" stroke-width="1.8" stroke-linecap="round"/>
+  <g fill="none" stroke="#A85A16" stroke-width="1.8" stroke-dasharray="7 6" opacity=".85">
+    <path d="M266 196 L148 792"/>
+    <path d="M534 196 L652 792"/>
+    <path d="M250 160 L550 160 M250 190 L550 190"/>
+    <path d="M262 292 L338 292 M462 292 L538 292 M262 304 L338 304 M462 304 L538 304"/>
+    <path d="M381 200 L381 612 M419 200 L419 612"/>
+    <path d="M270 148 L270 196 M326 148 L326 196 M382 148 L382 196 M438 148 L438 196 M494 148 L494 196"/>
+    <path d="M146 782 L654 782"/>
+  </g>
+  <path d="M148 791 L652 791" fill="none" stroke="#A9BCCF" stroke-width="1.8" stroke-dasharray="7 6" opacity=".7"/>
+  <g fill="#A9BCCF" opacity=".1">
+    <path d="M206 560 C 280 528, 420 528, 500 566 L520 700 C 400 726, 260 720, 178 692 Z"/>
+    <path d="M540 400 C 588 392, 626 420, 638 470 L640 560 C 600 520, 566 470, 540 440 Z"/>
+  </g>
+  <path d="M250 192 C 240 410, 186 630, 134 800 L666 800 C 614 630, 560 410, 550 192 Z" fill="url(#p05g4)"/>
+  <g fill="#A85A16">
+    <circle cx="400" cy="252" r="9.5"/>
+    <circle cx="400" cy="332" r="9.5"/>
+    <circle cx="400" cy="412" r="9.5"/>
+    <circle cx="400" cy="492" r="9.5"/>
+    <circle cx="400" cy="572" r="9.5"/>
+  </g>
+  <g fill="none" stroke="#D9C2A0" stroke-width="1.8" stroke-linecap="round" opacity=".9">
+    <path d="M394 247 a8 8 0 0 1 9-2 M394 327 a8 8 0 0 1 9-2 M394 407 a8 8 0 0 1 9-2 M394 487 a8 8 0 0 1 9-2 M394 567 a8 8 0 0 1 9-2"/>
+  </g>
+  <g fill="#A85A16">
+    <circle cx="263" cy="304" r="3.6"/>
+    <circle cx="337" cy="304" r="3.6"/>
+    <circle cx="463" cy="304" r="3.6"/>
+    <circle cx="537" cy="304" r="3.6"/>
+  </g>
+  <g fill="#D9C2A0" opacity=".85">
+    <circle cx="262" cy="303" r="1.4"/>
+    <circle cx="336" cy="303" r="1.4"/>
+    <circle cx="462" cy="303" r="1.4"/>
+    <circle cx="536" cy="303" r="1.4"/>
+  </g>
+</svg>

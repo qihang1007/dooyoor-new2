@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>注册 · 㛊䎟 dooyoor</title>
+  <meta name="description" content="用手机号注册 㛊䎟 dooyoor 演示账户：东方古字为名、西方丹宁为体，注册登录后即可查看余额、订单与丹宁溯源码凭证。验证码为演示环境固定值 888888，不会真的发送短信；注册成功即自动登录并进入我的账户。">
+  <meta name="theme-color" content="#F5F6F8">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="注册 · 㛊䎟 dooyoor">
+  <meta property="og:description" content="东方古字为名、西方丹宁为体。用手机号注册 㛊䎟 dooyoor 演示账户，验证码为演示环境固定值 888888。">
+  <meta property="og:image" content="assets/hero.svg">
+  <link rel="icon" href="assets/logo-mark.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/logo-mark.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="register">
+
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <button class="icon-btn menu-toggle" type="button" aria-label="打开菜单" aria-expanded="false" aria-controls="drawer" data-menu-toggle>
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+
+      <a class="brand" href="index.html">
+        <img class="brand-mark" src="assets/logo-mark.svg" alt="" width="26" height="26" decoding="async">
+        <span class="brand-name">dooyoor</span>
+        <span class="brand-cn" aria-hidden="true">㛊䎟</span>
+      </a>
+
+      <nav class="nav-primary" aria-label="主导航">
+        <a class="nav-link" href="index.html" data-nav="index">首页</a>
+        <a class="nav-link" href="shop.html" data-nav="shop">全部商品</a>
+        <a class="nav-link" href="preowned.html" data-nav="preowned">二手商城</a>
+        <a class="nav-link" href="about.html" data-nav="about">品牌故事</a>
+        <a class="nav-link" href="contact.html" data-nav="contact">联系我们</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" type="button" aria-label="搜索商品" aria-expanded="false" aria-controls="search" data-search-toggle>
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        </button>
+        <a class="icon-btn" href="account.html" aria-label="我的" data-account-link>
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c0-3.9 3.1-6 7-6s7 2.1 7 6"/></svg>
+        </a>
+        <a class="icon-btn fav-link" href="shop.html?fav=1" aria-label="我的收藏">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.2S4.6 15.5 4.6 10.4A4.3 4.3 0 0 1 12 7.5a4.3 4.3 0 0 1 7.4 2.9c0 5.1-7.4 9.8-7.4 9.8Z"/></svg>
+          <span class="cart-badge" data-fav-count hidden>0</span>
+        </a>
+        <a class="icon-btn" href="cart.html" aria-label="购物袋">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h12l1 12H5L6 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+          <span class="cart-badge" data-cart-count hidden>0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <div class="drawer" id="drawer" data-drawer hidden>
+    <div class="drawer-backdrop" data-drawer-close></div>
+    <aside class="drawer-panel" role="dialog" aria-modal="true" aria-label="站点菜单">
+      <div class="drawer-head">
+        <span class="drawer-title">dooyoor</span>
+        <button class="icon-btn" type="button" aria-label="关闭菜单" data-drawer-close>
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+      <nav class="drawer-nav" aria-label="移动端导航">
+        <a class="drawer-link" href="index.html" data-nav="index">首页</a>
+        <a class="drawer-link" href="shop.html" data-nav="shop">全部商品</a>
+        <a class="drawer-link" href="preowned.html" data-nav="preowned">二手商城</a>
+        <a class="drawer-link" href="verify.html" data-nav="verify">溯源查询</a>
+        <a class="drawer-link" href="about.html" data-nav="about">品牌故事</a>
+        <a class="drawer-link" href="contact.html" data-nav="contact">联系我们</a>
+        <a class="drawer-link" href="cart.html" data-nav="cart">购物袋</a>
+        <a class="drawer-link" href="shop.html?fav=1">我的收藏</a>
+        <a class="drawer-link" href="account.html">我的账户</a>
+      </nav>
+      <div class="drawer-foot">
+        <p class="drawer-note">满 ¥999 免运费 · 认证二手 7 天无理由</p>
+        <a class="drawer-mail" href="mailto:hello@dooyoor.com">hello@dooyoor.com</a>
+      </div>
+    </aside>
+  </div>
+
+  <div class="search-overlay" id="search" data-search hidden>
+    <div class="search-backdrop" data-search-close></div>
+    <div class="search-panel" role="dialog" aria-modal="true" aria-label="搜索商品">
+      <form class="search-form" action="shop.html" method="get" role="search">
+        <label class="u-sr-only" for="siteSearch">搜索商品</label>
+        <div class="search-field">
+          <input class="input search-input" id="siteSearch" name="q" type="search" placeholder="搜索商品名或品类，如：丹宁" autocomplete="off">
+          <button class="search-clear" type="button" aria-label="清空搜索内容" data-search-clear hidden>
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+          </button>
+        </div>
+        <button class="btn btn--primary" type="submit">搜索</button>
+      </form>
+      <div class="search-suggest">
+        <span class="search-suggest-label">热门搜索</span>
+        <a class="filter-chip" href="shop.html?q=丹宁">丹宁</a>
+        <a class="filter-chip" href="shop.html?q=牛仔">牛仔裤</a>
+        <a class="filter-chip" href="shop.html?q=裙">裙子</a>
+        <a class="filter-chip" href="shop.html?cond=used">认证二手</a>
+      </div>
+      <button class="btn btn--ghost search-close" type="button" data-search-close>关闭</button>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <section class="section section--tight">
+      <div class="container">
+        <div class="page-head">
+          <p class="eyebrow">Create account</p>
+          <h1 class="h1">注册</h1>
+          <p class="lead">用手机号创建一个演示账户，注册登录后即可查看余额、订单与丹宁溯源码凭证，并挑选丹宁单品查证链上溯源码。验证码是演示环境里的固定值，不会真的发送短信；注册成功后会立即自动登录并进入我的账户。</p>
+        </div>
+
+        <div class="admin-card">
+          <h2 class="admin-card-title">创建账户</h2>
+
+          <form class="form" data-auth-form="register" novalidate>
+            <div class="field">
+              <label class="field-label" for="regPhone">手机号<span class="req">*</span></label>
+              <input class="input" id="regPhone" name="phone" type="tel" inputmode="numeric" maxlength="11" autocomplete="tel" placeholder="11 位手机号，以 1 开头" aria-describedby="regPhoneError">
+              <p class="field-error" id="regPhoneError"></p>
+            </div>
+
+            <div class="field">
+              <label class="field-label" for="regCode">验证码<span class="req">*</span></label>
+              <input class="input" id="regCode" name="code" type="text" inputmode="numeric" maxlength="6" autocomplete="off" placeholder="演示验证码 888888" aria-describedby="regCodeHint regCodeError">
+              <button class="btn btn--outline btn--block" type="button" data-code-btn>获取验证码</button>
+              <p class="field-error" id="regCodeError"></p>
+              <p class="verify-hint" id="regCodeHint">演示环境：验证码固定为 <code>888888</code>，不会真的发送短信，也不会有任何短信到达你的手机。点击「获取验证码」只是演示 60 秒倒计时，倒计时结束后按钮会恢复可点。</p>
+            </div>
+
+            <div class="field">
+              <label class="field-label" for="regPassword">密码<span class="req">*</span></label>
+              <input class="input" id="regPassword" name="password" type="password" autocomplete="new-password" placeholder="至少 6 位" aria-describedby="regPasswordError">
+              <p class="field-error" id="regPasswordError"></p>
+            </div>
+
+            <div class="field">
+              <label class="field-label" for="regConfirm">确认密码<span class="req">*</span></label>
+              <input class="input" id="regConfirm" name="confirm" type="password" autocomplete="new-password" placeholder="再输入一次密码" aria-describedby="regConfirmError">
+              <p class="field-error" id="regConfirmError"></p>
+            </div>
+
+            <p class="field-error" id="regFormError" data-form-error role="alert"></p>
+
+            <div class="form-actions">
+              <button class="btn btn--primary btn--block" type="submit">注册并登录</button>
+            </div>
+
+            <div class="form-actions">
+              <a class="btn btn--ghost" href="index.html">返回首页</a>
+              <a class="btn btn--outline" href="login.html">已有账号？去登录</a>
+            </div>
+          </form>
+
+          <p class="form-note" data-auth-help hidden>如果没有自动跳转，可以<a class="section-link" href="account.html">手动进入我的账户</a>。</p>
+
+          <div class="admin-login-tip">
+            <p><strong>演示账号</strong>：手机号 <code>13800138000</code>，密码 <code>dooyoor</code>，首次访问登录页时由脚本自动创建，并预置 10000 元演示余额与一条「演示初始余额」流水。不想注册的话，直接去登录页用这个账号即可。</p>
+            <p>这是纯前端演示：账号、余额与订单仅保存在本机浏览器，清空缓存即丢失；密码只以散列形式存在本地，不具备任何安全性，不可用于真实交易。</p>
+          </div>
+        </div>
+
+        <div class="chain-panel">
+          <div class="chain-head">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 5-3 8-7 9-4-1-7-4-7-9V6l7-3Z"/><path d="M9 12l2 2 4-4"/></svg>
+            <span class="chain-title">账号安全口径</span>
+          </div>
+          <p class="chain-note">注册时密码只在内存中交给前端脚本，本站不会保存明文密码，只保存一段确定性散列；新账号会自动获得 10000 元演示余额，并写入一条「演示初始余额」流水。</p>
+          <p class="chain-note">本站没有服务端，所有请求都不会离开你的浏览器。换个浏览器或清空缓存，账号就不存在了。</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <p class="footer-logo">dooyoor<span class="footer-cn">㛊䎟</span></p>
+          <p class="footer-tagline">懂你的美，更懂你的身。东方古字为名，西方丹宁为体。</p>
+          <p class="footer-social">
+            <a class="footer-link" href="contact.html">微信 dooyoor</a>
+            <a class="footer-link" href="contact.html">小红书 @dooyoor</a>
+          </p>
+        </div>
+        <div class="footer-col">
+          <h2 class="footer-title">购物</h2>
+          <a class="footer-link" href="shop.html">全部商品</a>
+          <a class="footer-link" href="shop.html?c=tops">上衣</a>
+          <a class="footer-link" href="shop.html?c=bottoms">裤子</a>
+          <a class="footer-link" href="shop.html?c=skirts">裙子</a>
+          <a class="footer-link" href="shop.html?c=bags">包包</a>
+        </div>
+        <div class="footer-col">
+          <h2 class="footer-title">帮助</h2>
+          <a class="footer-link" href="contact.html#faq">常见问题</a>
+          <a class="footer-link" href="verify.html">溯源查询</a>
+          <a class="footer-link" href="contact.html#faq">尺码与版型</a>
+          <a class="footer-link" href="contact.html#faq">配送与退换</a>
+          <a class="footer-link" href="contact.html">联系我们</a>
+        </div>
+        <div class="footer-col footer-news">
+          <h2 class="footer-title">订阅新品通知</h2>
+          <p class="footer-note">每月一封信，只讲新面料与新款式，不发广告。</p>
+          <form class="news-form" data-news-form novalidate>
+            <label class="u-sr-only" for="newsEmail">邮箱地址</label>
+            <input class="input" id="newsEmail" name="email" type="email" placeholder="你的邮箱" autocomplete="email" required>
+            <button class="btn btn--outline" type="submit">订阅</button>
+          </form>
+          <p class="form-note" data-news-note></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span data-year>2025</span> dooyoor 㛊䎟 · 保留所有权利</p>
+        <p class="footer-legal"><a class="footer-link" href="#">隐私政策</a><a class="footer-link" href="#">服务条款</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <nav class="bottom-nav" aria-label="底部导航">
+    <a class="bottom-nav-item" href="index.html" data-nav="index">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-6 8 6"/><path d="M6 10v9h12v-9"/></svg>
+      <span class="bottom-nav-label">首页</span>
+    </a>
+    <a class="bottom-nav-item" href="shop.html" data-nav="shop">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16l-1.5 13h-13L4 6Z"/><path d="M9 6a3 3 0 0 1 6 0"/></svg>
+      <span class="bottom-nav-label">商品</span>
+    </a>
+    <a class="bottom-nav-item" href="preowned.html" data-nav="preowned">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 0 1 13-6"/><path d="M20 12a8 8 0 0 1-13 6"/><path d="M17 3v3h-3"/><path d="M7 21v-3h3"/></svg>
+      <span class="bottom-nav-label">二手</span>
+    </a>
+    <a class="bottom-nav-item" href="cart.html" data-nav="cart">
+      <span class="bottom-nav-icon-wrap">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h12l1 12H5L6 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <span class="cart-badge" data-cart-count hidden>0</span>
+      </span>
+      <span class="bottom-nav-label">购物袋</span>
+    </a>
+    <a class="bottom-nav-item" href="account.html" data-nav="account">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c0-3.9 3.1-6 7-6s7 2.1 7 6"/></svg>
+      <span class="bottom-nav-label">我的</span>
+    </a>
+  </nav>
+  <div class="toast" data-toast role="status" aria-live="polite"></div>
+
+  <script src="js/site-config.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/fav.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/wallet.js"></script>
+  <script src="js/orders.js"></script>
+  <script src="js/preowned.js"></script>
+  <script src="js/auth-page.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="p01t">
+  <title id="p01t">赤耳丹宁夹克 · 14oz 原色靛蓝</title>
+  <defs>
+    <linearGradient id="p01g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F5F6F8"/>
+      <stop offset="1" stop-color="#E3E6EA"/>
+    </linearGradient>
+    <linearGradient id="p01g2" gradientUnits="userSpaceOnUse" x1="0" y1="244" x2="0" y2="712">
+      <stop offset="0" stop-color="#3D5473"/>
+      <stop offset=".45" stop-color="#2B3F5C"/>
+      <stop offset="1" stop-color="#1B2A42"/>
+    </linearGradient>
+    <linearGradient id="p01g3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0E1620" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#0E1620" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#p01g1)"/>
+  <ellipse cx="400" cy="726" rx="236" ry="30" fill="#0E1620" opacity=".10"/>
+  <ellipse cx="400" cy="736" rx="126" ry="15" fill="#0E1620" opacity=".12"/>
+  <path d="M330 244 C 300 246, 278 252, 258 266 C 228 288, 202 322, 188 356 L134 494 C 131 505, 135 512, 148 516 L197 534 C 209 537, 218 532, 224 520 L292 388 L292 712 L508 712 L508 388 L576 520 C 582 532, 591 537, 603 534 L652 516 C 665 512, 669 505, 666 494 L612 356 C 598 322, 572 288, 542 266 C 522 252, 500 246, 470 244 Z" fill="url(#p01g2)" stroke="#0E1620" stroke-opacity=".55" stroke-width="2"/>
+  <path d="M508 244 L508 712" fill="none" stroke="#0E1620" stroke-opacity=".13" stroke-width="9"/>
+  <path d="M330 286 L470 286" fill="none" stroke="#0E1620" stroke-opacity=".1" stroke-width="3"/>
+  <path d="M258 266 C 258 318, 262 364, 290 392 C 306 400, 320 392, 330 380 L330 244 C 306 246, 280 250, 258 266 Z" fill="#3D5473" stroke="#0E1620" stroke-opacity=".35" stroke-width="1.5"/>
+  <path d="M542 266 C 542 318, 538 364, 510 392 C 494 400, 480 392, 470 380 L470 244 C 494 246, 520 250, 542 266 Z" fill="#3D5473" stroke="#0E1620" stroke-opacity=".35" stroke-width="1.5"/>
+  <path d="M352 240 L448 240 L448 286 L352 286 Z" fill="#2B3F5C" opacity=".55"/>
+  <path d="M272 428 L328 428 L328 492 L272 492 Z" fill="#3D5473"/>
+  <path d="M272 428 L328 428" fill="none" stroke="#C97A2B" stroke-width="2" stroke-dasharray="6 5"/>
+  <path d="M272 428 V492 H328 V428" fill="none" stroke="#A85A16" stroke-opacity=".55" stroke-width="1.4"/>
+  <path d="M472 428 L528 428 L528 492 L472 492 Z" fill="#3D5473"/>
+  <path d="M472 428 L528 428" fill="none" stroke="#C97A2B" stroke-width="2" stroke-dasharray="6 5"/>
+  <path d="M472 428 V492 H528 V428" fill="none" stroke="#A85A16" stroke-opacity=".55" stroke-width="1.4"/>
+  <path d="M352 262 L448 262 L448 712 L352 712 Z" fill="#3D5473" opacity=".5"/>
+  <path d="M357 262 L357 712" fill="none" stroke="#C97A2B" stroke-width="2.2" stroke-dasharray="7 6"/>
+  <path d="M443 262 L443 712" fill="none" stroke="#C97A2B" stroke-width="2.2" stroke-dasharray="7 6"/>
+  <path d="M352 440 L448 440" fill="none" stroke="#A85A16" stroke-opacity=".3" stroke-width="1.4"/>
+  <path d="M258 266 L330 244 L330 286 Z" fill="none" stroke="#C97A2B" stroke-opacity=".85" stroke-width="2" stroke-dasharray="6 5"/>
+  <path d="M542 266 L470 244 L470 286 Z" fill="none" stroke="#C97A2B" stroke-opacity=".85" stroke-width="2" stroke-dasharray="6 5"/>
+  <g fill="none" stroke="#C97A2B" stroke-opacity=".7" stroke-width="2" stroke-dasharray="6 5">
+    <path d="M330 244 292 388 V712"/>
+    <path d="M470 244 508 388 V712"/>
+  </g>
+  <g fill="none" stroke="#C97A2B" stroke-opacity=".6" stroke-width="1.8" stroke-dasharray="6 5">
+    <path d="M258 266 188 356 134 494"/>
+    <path d="M542 266 612 356 666 494"/>
+    <path d="M292 712 508 712"/>
+  </g>
+  <path d="M292 646 L508 646 L508 712 L292 712 Z" fill="#3D5473" opacity=".45"/>
+  <path d="M302 650 L302 708 M326 650 L326 708 M350 650 L350 708 M374 650 L374 708 M398 650 L398 708 M422 650 L422 708 M446 650 L446 708 M470 650 L470 708 M494 650 L494 708" fill="none" stroke="#0E1620" stroke-opacity=".26" stroke-width="1.4"/>
+  <path d="M292 646 L508 646" fill="none" stroke="#C97A2B" stroke-opacity=".75" stroke-width="1.8" stroke-dasharray="6 5"/>
+  <path d="M152 506 L192 523 L215 466 L176 450 Z" fill="#1B2A42" stroke="#0E1620" stroke-opacity=".4" stroke-width="1.4"/>
+  <path d="M165 462 L165 518 M179 468 L179 519 M193 474 L193 520" fill="none" stroke="#A9BCCF" stroke-opacity=".3" stroke-width="1.3"/>
+  <path d="M152 506 192 523" fill="none" stroke="#C97A2B" stroke-width="1.8" stroke-dasharray="5 4"/>
+  <path d="M612 506 L648 494 L631 437 L594 450 Z" fill="#1B2A42" stroke="#0E1620" stroke-opacity=".4" stroke-width="1.4"/>
+  <path d="M600 461 L600 517 M614 467 L614 520 M628 473 L628 521" fill="none" stroke="#A9BCCF" stroke-opacity=".3" stroke-width="1.3"/>
+  <path d="M608 506 L648 494" fill="none" stroke="#C97A2B" stroke-width="1.8" stroke-dasharray="5 4"/>
+  <g fill="#A85A16" stroke="#0E1620" stroke-opacity=".45" stroke-width="1.2">
+    <circle cx="400" cy="330" r="10"/>
+    <circle cx="400" cy="432" r="10"/>
+    <circle cx="400" cy="534" r="10"/>
+  </g>
+  <g fill="none" stroke="#D9C2A0" stroke-width="1.8" stroke-linecap="round">
+    <path d="M393 325 A9 9 0 0 1 407 325"/>
+    <path d="M393 427 A9 9 0 0 1 407 427"/>
+    <path d="M393 529 A9 9 0 0 1 407 529"/>
+  </g>
+  <g fill="none" stroke="#A9BCCF" stroke-opacity=".2" stroke-width="2.4" stroke-linecap="round">
+    <path d="M268 552 C 298 538, 322 552, 344 572"/>
+    <path d="M286 600 C 314 588, 336 600, 356 618"/>
+    <path d="M466 556 C 494 572, 516 570, 540 560"/>
+  </g>
+  <g fill="none" stroke="#1B2A42" stroke-opacity=".32" stroke-width="1" stroke-dasharray="2 4">
+    <path d="M614 478 L646 466"/>
+    <path d="M300 476 L272 466"/>
+  </g>
+  <path d="M330 244 C 300 246, 278 252, 258 266 C 228 288, 202 322, 188 356 L134 494 C 131 505, 135 512, 148 516 L197 534 C 209 537, 218 532, 224 520 L292 388 L292 712 L508 712 L508 388 L576 520 C 582 532, 591 537, 603 534 L652 516 C 665 512, 669 505, 666 494 L612 356 C 598 322, 572 288, 542 266 C 522 252, 500 246, 470 244 Z" fill="url(#p01g3)"/>
+</svg>

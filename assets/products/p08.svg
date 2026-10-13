@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="p08t">
+  <title id="p08t">DOOYOOR 迷你牛仔斜挎包 · 8oz 石洗浅蓝配铜磁扣</title>
+  <desc>石洗浅蓝迷你方形斜挎包，深一档靛蓝翻盖配铜质磁扣，可调肩带带横向压线与铜色调节扣。</desc>
+  <defs>
+    <linearGradient id="p08g1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F5F6F8"/>
+      <stop offset="1" stop-color="#E3E6EA"/>
+    </linearGradient>
+    <linearGradient id="p08g2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#A9BCCF"/>
+      <stop offset="1" stop-color="#7C93AE"/>
+    </linearGradient>
+    <linearGradient id="p08g3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3D5473"/>
+      <stop offset="1" stop-color="#2B3F5C"/>
+    </linearGradient>
+    <linearGradient id="p08g4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EDEFF2" stop-opacity=".2"/>
+      <stop offset=".55" stop-color="#EDEFF2" stop-opacity="0"/>
+      <stop offset="1" stop-color="#1B2A42" stop-opacity=".3"/>
+    </linearGradient>
+    <radialGradient id="p08g5" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#1B2A42" stop-opacity=".3"/>
+      <stop offset="1" stop-color="#1B2A42" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#p08g1)"/>
+  <ellipse cx="400" cy="702" rx="196" ry="26" fill="url(#p08g5)"/>
+  <path d="M268 438 C 274 240, 526 240, 532 438" fill="none" stroke="#3D5473" stroke-width="18" stroke-linecap="round"/>
+  <path d="M268 438 C 274 240, 526 240, 532 438" fill="none" stroke="#A9BCCF" stroke-width="1.5" stroke-dasharray="6 6" opacity=".75"/>
+  <g fill="none" stroke="#A9BCCF" stroke-width="1.6" opacity=".55">
+    <path d="M364 284 V304"/>
+    <path d="M388 282 V302"/>
+    <path d="M412 282 V302"/>
+    <path d="M436 284 V304"/>
+  </g>
+  <g transform="rotate(-24 500 350)">
+    <rect x="478" y="340" width="44" height="20" rx="4" fill="#C97A2B"/>
+    <rect x="476" y="338" width="48" height="24" rx="5" fill="none" stroke="#A85A16" stroke-width="2.5"/>
+    <path d="M500 338 V362" stroke="#A85A16" stroke-width="3"/>
+    <rect x="484" y="345" width="32" height="10" rx="2" fill="#0E1620" opacity=".3"/>
+  </g>
+  <rect x="250" y="430" width="300" height="230" rx="16" fill="url(#p08g2)"/>
+  <rect x="250" y="430" width="300" height="230" rx="16" fill="url(#p08g4)"/>
+  <rect x="264" y="444" width="272" height="202" rx="11" fill="none" stroke="#C97A2B" stroke-width="1.8" stroke-dasharray="7 6" opacity=".7"/>
+  <path d="M250 516 Q 400 556 550 516 L550 528 Q 400 568 250 528 Z" fill="#0E1620" opacity=".16"/>
+  <path d="M250 446 Q 250 430 266 430 L534 430 Q 550 430 550 446 L550 512 Q 400 552 250 512 Z" fill="url(#p08g3)"/>
+  <path d="M250 446 Q 250 430 266 430 L534 430 Q 550 430 550 446 L550 452 Q 400 442 250 452 Z" fill="#A9BCCF" opacity=".22"/>
+  <path d="M264 448 Q 400 486 536 448" fill="none" stroke="#A9BCCF" stroke-width="1.6" stroke-dasharray="6 6" opacity=".6"/>
+  <path d="M256 508 Q 400 547 544 508" fill="none" stroke="#C97A2B" stroke-width="1.8" stroke-dasharray="7 6" opacity=".85"/>
+  <circle cx="400" cy="505" r="13" fill="#A85A16"/>
+  <circle cx="400" cy="505" r="13" fill="none" stroke="#0E1620" stroke-width="1.2" opacity=".28"/>
+  <circle cx="400" cy="505" r="4" fill="#0E1620" opacity=".3"/>
+  <path d="M393 499 a9 9 0 0 1 11-2" fill="none" stroke="#D9C2A0" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M356 505 H378 M422 505 H444" fill="none" stroke="#A85A16" stroke-width="1.8" stroke-dasharray="5 4" opacity=".85"/>
+  <path d="M282 596 C 320 584, 372 588, 396 606 L400 646 C 350 634, 306 640, 280 646 Z" fill="#A9BCCF" opacity=".07"/>
+</svg>

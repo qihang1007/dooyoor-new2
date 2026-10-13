@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="p06t">
+  <title id="p06t">DOOYOOR 前开衩长款牛仔裙 · 12oz 原色靛蓝 13 片拼接</title>
+  <desc>原色靛蓝长款直筒偏 A 牛仔裙，13 片纵向拼接、前中开衩带包边条、宽腰头配后腰松紧与抽绳出口。</desc>
+  <defs>
+    <linearGradient id="p06g1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F5F6F8"/>
+      <stop offset="1" stop-color="#E3E6EA"/>
+    </linearGradient>
+    <linearGradient id="p06g2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3D5473"/>
+      <stop offset="1" stop-color="#1B2A42"/>
+    </linearGradient>
+    <linearGradient id="p06g3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2B3F5C"/>
+      <stop offset="1" stop-color="#1B2A42"/>
+    </linearGradient>
+    <linearGradient id="p06g4" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#EDEFF2" stop-opacity=".16"/>
+      <stop offset=".45" stop-color="#EDEFF2" stop-opacity="0"/>
+      <stop offset="1" stop-color="#0E1620" stop-opacity=".3"/>
+    </linearGradient>
+    <radialGradient id="p06g5" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#1B2A42" stop-opacity=".32"/>
+      <stop offset="1" stop-color="#1B2A42" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#p06g1)"/>
+  <ellipse cx="400" cy="962" rx="248" ry="28" fill="url(#p06g5)"/>
+  <path d="M250 222 C 244 430, 214 700, 178 940 L622 940 C 586 700, 556 430, 550 222 Z" fill="url(#p06g2)"/>
+  <g fill="none" stroke="#A9BCCF" stroke-width="1.6" stroke-dasharray="6 7" opacity=".45">
+    <path d="M262 226 L196 934 M282 226 L225 934 M301 226 L254 934 M324 226 L287 934 M346 226 L320 934 M370 226 L356 934"/>
+    <path d="M403 226 L404 934 M435 226 L451 934 M456 226 L482 934 M477 226 L513 934 M499 226 L547 934 M522 226 L580 934"/>
+  </g>
+  <g fill="#A9BCCF">
+    <path d="M272 330 C 300 320, 316 400, 314 500 C 310 620, 286 660, 268 600 Z" opacity=".12"/>
+    <path d="M500 430 C 540 420, 570 500, 566 610 C 556 720, 520 700, 516 620 Z" opacity=".14"/>
+    <path d="M212 780 C 300 762, 420 772, 476 806 L486 890 C 360 872, 268 884, 200 892 Z" opacity=".08"/>
+  </g>
+  <path d="M250 222 C 244 430, 214 700, 178 940 L622 940 C 586 700, 556 430, 550 222 Z" fill="url(#p06g4)"/>
+  <path d="M404 676 L386 940 L424 940 Z" fill="#0E1620" opacity=".92"/>
+  <path d="M403 676 L385 676 L365 940 L385 940 Z" fill="#2B3F5C"/>
+  <path d="M403 676 L421 676 L441 940 L423 940 Z" fill="#2B3F5C"/>
+  <path d="M386 654 L422 654 L404 682 Z" fill="#1B2A42"/>
+  <g fill="none" stroke="#A85A16" stroke-width="1.8" stroke-dasharray="7 6" opacity=".85">
+    <path d="M403 682 L385 936 M403 682 L423 936 M389 658 L403 678 M419 658 L405 678"/>
+    <path d="M254 224 L184 934 M546 224 L616 934 M250 190 L550 190 M254 218 L546 218"/>
+    <path d="M286 176 L286 222 M339 176 L339 222 M392 176 L392 222 M445 176 L445 222 M498 176 L498 222"/>
+  </g>
+  <path d="M190 926 L383 926 M427 926 L610 926" fill="none" stroke="#A85A16" stroke-width="1.8" stroke-dasharray="7 6" opacity=".8"/>
+  <path d="M192 934 L385 934 M425 934 L608 934" fill="none" stroke="#A9BCCF" stroke-width="1.8" stroke-dasharray="7 6" opacity=".6"/>
+  <rect x="246" y="180" width="308" height="42" rx="3" fill="url(#p06g3)"/>
+  <path d="M246 180 L554 180 L554 187 L246 187 Z" fill="#A9BCCF" opacity=".26"/>
+  <g fill="#2B3F5C">
+    <rect x="281" y="175" width="11" height="52"/>
+    <rect x="334" y="175" width="11" height="52"/>
+    <rect x="387" y="175" width="11" height="52"/>
+    <rect x="440" y="175" width="11" height="52"/>
+    <rect x="493" y="175" width="11" height="52"/>
+  </g>
+  <g fill="none" stroke="#0E1620" stroke-opacity=".28" stroke-width="1.2">
+    <path d="M252 186 V216 M258 186 V216 M264 186 V216 M270 186 V216"/>
+    <path d="M530 186 V216 M536 186 V216 M542 186 V216 M548 186 V216"/>
+  </g>
+  <ellipse cx="514" cy="202" rx="4" ry="5" fill="#0E1620" opacity=".5"/>
+  <path d="M514 206 C 519 216, 527 214, 531 207" fill="none" stroke="#A9BCCF" stroke-width="2" stroke-linecap="round" opacity=".7"/>
+</svg>

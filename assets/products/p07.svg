@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="p07t">
+  <title id="p07t">DOOYOOR 牛仔拼接托特包 · 五色余料拼接</title>
+  <desc>竖长梯形托特包，袋身由八块不同色调的丹宁余料拼接，两条拱形提手带 X 形加固缝，袋口包边并露出本白帆布内衬。</desc>
+  <defs>
+    <linearGradient id="p07g1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F5F6F8"/>
+      <stop offset="1" stop-color="#E3E6EA"/>
+    </linearGradient>
+    <linearGradient id="p07g2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EDEFF2" stop-opacity=".22"/>
+      <stop offset=".5" stop-color="#EDEFF2" stop-opacity="0"/>
+      <stop offset="1" stop-color="#0E1620" stop-opacity=".3"/>
+    </linearGradient>
+    <linearGradient id="p07g3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#EDEFF2" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#0E1620" stop-opacity=".42"/>
+    </linearGradient>
+    <radialGradient id="p07g4" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#1B2A42" stop-opacity=".34"/>
+      <stop offset="1" stop-color="#1B2A42" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#p07g1)"/>
+  <ellipse cx="400" cy="774" rx="238" ry="30" fill="url(#p07g4)"/>
+  <g fill="none" stroke="#2B3F5C" stroke-width="22" stroke-linecap="round">
+    <path d="M250 338 C 256 224, 364 224, 370 338"/>
+    <path d="M430 338 C 436 224, 544 224, 550 338"/>
+  </g>
+  <g fill="none" stroke="#C97A2B" stroke-width="1.6" stroke-dasharray="6 6" opacity=".9">
+    <path d="M250 338 C 256 224, 364 224, 370 338"/>
+    <path d="M430 338 C 436 224, 544 224, 550 338"/>
+  </g>
+  <g stroke="#1B2A42" stroke-width="1.2">
+    <path d="M190 330 L401 332 L398 469 L197 470 Z" fill="#1B2A42"/>
+    <path d="M401 332 L610 330 L603 470 L398 469 Z" fill="#3D5473"/>
+    <path d="M197 470 L340 470 L336 620 L204 620 Z" fill="#2B3F5C"/>
+    <path d="M340 470 L468 471 L464 620 L336 620 Z" fill="#7C93AE"/>
+    <path d="M468 471 L603 470 L596 620 L464 620 Z" fill="#22262B"/>
+    <path d="M204 620 L330 620 L326 750 L210 750 Z" fill="#1B2A42"/>
+    <path d="M330 620 L466 619 L462 750 L326 750 Z" fill="#3D5473"/>
+    <path d="M466 619 L596 620 L590 750 L462 750 Z" fill="#2B3F5C"/>
+  </g>
+  <g fill="none" stroke="#A85A16" stroke-width="1.8" stroke-dasharray="7 6" opacity=".8">
+    <path d="M401 334 L398 468"/>
+    <path d="M340 472 L336 618"/>
+    <path d="M468 472 L464 618"/>
+    <path d="M330 622 L326 748"/>
+    <path d="M466 622 L462 748"/>
+    <path d="M199 470 L601 470"/>
+    <path d="M206 620 L594 620"/>
+  </g>
+  <path d="M199 344 L217 736 L583 736 L601 344 Z" fill="none" stroke="#C97A2B" stroke-width="1.8" stroke-dasharray="7 6" opacity=".7"/>
+  <path d="M190 330 L210 750 L590 750 L610 330 Z" fill="url(#p07g2)"/>
+  <path d="M610 330 L586 330 L566 750 L590 750 Z" fill="url(#p07g3)"/>
+  <path d="M200 350 C 300 376, 500 376, 600 350 L600 366 C 500 392, 300 392, 200 366 Z" fill="#EDEFF2"/>
+  <path d="M186 318 L614 318 L612 352 L188 352 Z" fill="#1B2A42"/>
+  <g fill="none" stroke="#A85A16" stroke-width="1.8" stroke-dasharray="7 6" opacity=".85">
+    <path d="M192 328 L608 328"/>
+    <path d="M190 344 L610 344"/>
+  </g>
+  <g fill="none" stroke="#C97A2B" stroke-width="1.8" stroke-dasharray="6 5">
+    <path d="M238 320 L262 356 M262 320 L238 356"/>
+    <path d="M358 320 L382 356 M382 320 L358 356"/>
+    <path d="M418 320 L442 356 M442 320 L418 356"/>
+    <path d="M538 320 L562 356 M562 320 L538 356"/>
+  </g>
+</svg>

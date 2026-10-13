@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="c4t">
+  <title id="c4t">DOOYOOR 系列 · 牛仔包袋拼接构成</title>
+  <defs>
+    <linearGradient id="c4g1" x1="0" y1="0" x2=".6" y2="1">
+      <stop offset="0" stop-color="#F5F6F8"/>
+      <stop offset="1" stop-color="#E3E6EA"/>
+    </linearGradient>
+    <linearGradient id="c4g2" x1="0" y1="0" x2=".5" y2="1">
+      <stop offset="0" stop-color="#3D5473"/>
+      <stop offset="1" stop-color="#1B2A42"/>
+    </linearGradient>
+    <pattern id="c4p1" width="20" height="20" patternUnits="userSpaceOnUse" patternTransform="rotate(63)">
+      <path d="M0 10h20" fill="none" stroke="#A9BCCF" stroke-opacity=".2" stroke-width="2"/>
+    </pattern>
+    <filter id="c4b1" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="12"/>
+    </filter>
+  </defs>
+  <rect width="800" height="1000" fill="url(#c4g1)"/>
+  <ellipse cx="400" cy="880" rx="300" ry="60" fill="#1B2A42" opacity=".18" filter="url(#c4b1)"/>
+  <path d="M240 330C240 170 560 170 560 330" fill="none" stroke="#2B3F5C" stroke-width="26" stroke-linecap="round"/>
+  <rect x="140" y="310" width="520" height="540" rx="18" fill="url(#c4g2)"/>
+  <rect x="140" y="310" width="520" height="540" rx="18" fill="url(#c4p1)"/>
+  <rect x="180" y="350" width="440" height="200" rx="8" fill="#1B2A42" opacity=".92"/>
+  <rect x="180" y="350" width="440" height="200" rx="8" fill="url(#c4p1)"/>
+  <rect x="180" y="590" width="200" height="220" rx="6" fill="#7C93AE"/>
+  <rect x="180" y="590" width="200" height="220" rx="6" fill="url(#c4p1)"/>
+  <rect x="404" y="590" width="216" height="120" rx="6" fill="#22262B"/>
+  <rect x="404" y="734" width="216" height="76" rx="6" fill="#3D5473"/>
+  <path d="M186 556H614" fill="none" stroke="#C97A2B" stroke-width="3" stroke-dasharray="24 16" stroke-linecap="round" stroke-opacity=".85"/>
+  <path d="M186 830H614" fill="none" stroke="#A85A16" stroke-width="3" stroke-dasharray="24 16" stroke-linecap="round" stroke-opacity=".8"/>
+  <circle cx="180" cy="336" r="11" fill="#C97A2B"/>
+  <circle cx="620" cy="336" r="11" fill="#C97A2B"/>
+  <circle cx="400" cy="470" r="9" fill="#C97A2B"/>
+</svg>

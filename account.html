@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>我的 · 㛊䎟 dooyoor</title>
+  <meta name="description" content="㛊䎟 dooyoor 账户中心：东方古字为名、西方丹宁为体。资料与余额、订单、余额明细、增值抵扣、我的二手、区块链凭证与收藏，全部数据保存在本机浏览器。">
+  <meta name="theme-color" content="#F5F6F8">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="我的 · 㛊䎟 dooyoor">
+  <meta property="og:description" content="东方古字为名、西方丹宁为体。㛊䎟 dooyoor 账户中心：资料与余额、订单、余额明细、增值抵扣、我的二手、区块链凭证与收藏。">
+  <meta property="og:image" content="assets/hero.svg">
+  <link rel="icon" href="assets/logo-mark.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/logo-mark.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="account">
+
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <button class="icon-btn menu-toggle" type="button" aria-label="打开菜单" aria-expanded="false" aria-controls="drawer" data-menu-toggle>
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+
+      <a class="brand" href="index.html">
+        <img class="brand-mark" src="assets/logo-mark.svg" alt="" width="26" height="26" decoding="async">
+        <span class="brand-name">dooyoor</span>
+        <span class="brand-cn" aria-hidden="true">㛊䎟</span>
+      </a>
+
+      <nav class="nav-primary" aria-label="主导航">
+        <a class="nav-link" href="index.html" data-nav="index">首页</a>
+        <a class="nav-link" href="shop.html" data-nav="shop">全部商品</a>
+        <a class="nav-link" href="preowned.html" data-nav="preowned">二手商城</a>
+        <a class="nav-link" href="about.html" data-nav="about">品牌故事</a>
+        <a class="nav-link" href="contact.html" data-nav="contact">联系我们</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" type="button" aria-label="搜索商品" aria-expanded="false" aria-controls="search" data-search-toggle>
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        </button>
+        <a class="icon-btn" href="account.html" aria-label="我的" data-account-link>
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c0-3.9 3.1-6 7-6s7 2.1 7 6"/></svg>
+        </a>
+        <a class="icon-btn fav-link" href="shop.html?fav=1" aria-label="我的收藏">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.2S4.6 15.5 4.6 10.4A4.3 4.3 0 0 1 12 7.5a4.3 4.3 0 0 1 7.4 2.9c0 5.1-7.4 9.8-7.4 9.8Z"/></svg>
+          <span class="cart-badge" data-fav-count hidden>0</span>
+        </a>
+        <a class="icon-btn" href="cart.html" aria-label="购物袋">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h12l1 12H5L6 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+          <span class="cart-badge" data-cart-count hidden>0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <div class="drawer" id="drawer" data-drawer hidden>
+    <div class="drawer-backdrop" data-drawer-close></div>
+    <aside class="drawer-panel" role="dialog" aria-modal="true" aria-label="站点菜单">
+      <div class="drawer-head">
+        <span class="drawer-title">dooyoor</span>
+        <button class="icon-btn" type="button" aria-label="关闭菜单" data-drawer-close>
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+      <nav class="drawer-nav" aria-label="移动端导航">
+        <a class="drawer-link" href="index.html" data-nav="index">首页</a>
+        <a class="drawer-link" href="shop.html" data-nav="shop">全部商品</a>
+        <a class="drawer-link" href="preowned.html" data-nav="preowned">二手商城</a>
+        <a class="drawer-link" href="verify.html" data-nav="verify">溯源查询</a>
+        <a class="drawer-link" href="about.html" data-nav="about">品牌故事</a>
+        <a class="drawer-link" href="contact.html" data-nav="contact">联系我们</a>
+        <a class="drawer-link" href="cart.html" data-nav="cart">购物袋</a>
+        <a class="drawer-link" href="shop.html?fav=1">我的收藏</a>
+        <a class="drawer-link" href="account.html">我的账户</a>
+      </nav>
+      <div class="drawer-foot">
+        <p class="drawer-note">满 ¥999 免运费 · 认证二手 7 天无理由</p>
+        <a class="drawer-mail" href="mailto:hello@dooyoor.com">hello@dooyoor.com</a>
+      </div>
+    </aside>
+  </div>
+
+  <div class="search-overlay" id="search" data-search hidden>
+    <div class="search-backdrop" data-search-close></div>
+    <div class="search-panel" role="dialog" aria-modal="true" aria-label="搜索商品">
+      <form class="search-form" action="shop.html" method="get" role="search">
+        <label class="u-sr-only" for="siteSearch">搜索商品</label>
+        <div class="search-field">
+          <input class="input search-input" id="siteSearch" name="q" type="search" placeholder="搜索商品名或品类，如：丹宁" autocomplete="off">
+          <button class="search-clear" type="button" aria-label="清空搜索内容" data-search-clear hidden>
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+          </button>
+        </div>
+        <button class="btn btn--primary" type="submit">搜索</button>
+      </form>
+      <div class="search-suggest">
+        <span class="search-suggest-label">热门搜索</span>
+        <a class="filter-chip" href="shop.html?q=丹宁">丹宁</a>
+        <a class="filter-chip" href="shop.html?q=牛仔">牛仔裤</a>
+        <a class="filter-chip" href="shop.html?q=裙">裙子</a>
+        <a class="filter-chip" href="shop.html?cond=used">认证二手</a>
+      </div>
+      <button class="btn btn--ghost search-close" type="button" data-search-close>关闭</button>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <div class="container page-head">
+      <p class="eyebrow">Account</p>
+      <h1 class="h1">我的</h1>
+      <p class="lead">演示账户：在这里查看资料、余额、订单与丹宁溯源码凭证。东方古字为名，西方丹宁为体。所有数据由本页脚本读取本机浏览器存储后渲染。</p>
+    </div>
+
+    <section class="section section--tight">
+      <div class="container">
+        <div class="chain-panel">
+          <div class="chain-head">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="7"/><path d="M12 5v14M5 12h14"/></svg>
+            <span class="chain-title">演示说明</span>
+          </div>
+          <p class="chain-note">演示账户：账号、余额、订单与链上记录全部保存在本机浏览器，清空缓存即丢失；余额为虚拟余额，不涉及真实资金。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container">
+
+        <div class="filter-bar" role="tablist" aria-label="账户视图">
+          <button class="filter-chip is-active" type="button" role="tab" data-view="overview" aria-selected="true" aria-controls="accountPanel-overview">我的</button>
+          <button class="filter-chip" type="button" role="tab" data-view="orders" aria-selected="false" aria-controls="accountPanel-orders">我的订单</button>
+          <button class="filter-chip" type="button" role="tab" data-view="wallet" aria-selected="false" aria-controls="accountPanel-wallet">余额明细</button>
+          <button class="filter-chip" type="button" role="tab" data-view="discount" aria-selected="false" aria-controls="accountPanel-discount">我的抵扣</button>
+          <button class="filter-chip" type="button" role="tab" data-view="preowned" aria-selected="false" aria-controls="accountPanel-preowned">我的二手</button>
+          <button class="filter-chip" type="button" role="tab" data-view="chain" aria-selected="false" aria-controls="accountPanel-chain">我的区块链</button>
+          <button class="filter-chip" type="button" role="tab" data-view="favorites" aria-selected="false" aria-controls="accountPanel-favorites">我的收藏</button>
+          <button class="filter-chip" type="button" role="tab" data-view="settings" aria-selected="false" aria-controls="accountPanel-settings">设置</button>
+        </div>
+
+        <section id="accountPanel-overview" data-view-panel="overview" role="tabpanel" aria-label="我的">
+          <div class="stat-grid">
+            <article class="stat-card">
+              <p class="stat-label">账户资料</p>
+              <span class="admin-avatar" data-profile-avatar aria-hidden="true"></span>
+              <p class="order-name" data-profile-name></p>
+              <div class="order-meta">
+                <span data-profile-phone></span>
+                <span data-profile-date></span>
+              </div>
+              <div class="form-actions">
+                <button class="btn btn--outline" type="button" data-profile-edit>编辑资料</button>
+              </div>
+            </article>
+
+            <article class="stat-card">
+              <p class="stat-label">账户余额</p>
+              <p class="stat-value" data-balance></p>
+              <p><span class="badge badge--warn" data-balance-note></span></p>
+              <div class="form-actions">
+                <a class="btn btn--ghost" href="account.html?view=wallet" data-view-link="wallet">余额明细</a>
+              </div>
+            </article>
+          </div>
+
+          <h2 class="h2">功能入口</h2>
+          <div class="stat-grid" data-account-grid></div>
+
+          <div class="form-actions">
+            <button class="btn btn--outline" type="button" data-logout>退出登录</button>
+          </div>
+        </section>
+
+        <section id="accountPanel-orders" data-view-panel="orders" role="tabpanel" aria-label="我的订单" hidden>
+          <h2 class="h2">我的订单</h2>
+          <p class="lead">新品订单与认证二手订单都在这里。下单时生成的溯源码与交易哈希不会重新计算。</p>
+
+          <div class="filter-bar" aria-label="订单状态筛选">
+            <button class="filter-chip is-active" type="button" data-order-filter="all" aria-pressed="true">全部</button>
+            <button class="filter-chip" type="button" data-order-filter="pending" aria-pressed="false">待发货</button>
+            <button class="filter-chip" type="button" data-order-filter="shipped" aria-pressed="false">已发货</button>
+            <button class="filter-chip" type="button" data-order-filter="done" aria-pressed="false">已完成</button>
+            <button class="filter-chip" type="button" data-order-filter="refund" aria-pressed="false">退款中</button>
+          </div>
+
+          <div class="admin-list" data-order-list></div>
+
+          <div class="empty-state" data-order-empty hidden>
+            <p class="h3">这个状态下还没有订单</p>
+            <p>换一个状态看看，或去挑一条能穿很多年的牛仔裤。</p>
+            <a class="btn btn--outline" href="shop.html">去全部商品</a>
+          </div>
+        </section>
+
+        <section id="accountPanel-wallet" data-view-panel="wallet" role="tabpanel" aria-label="余额明细" hidden>
+          <h2 class="h2">余额明细</h2>
+          <p class="lead">每一笔收入与支出都会记一条流水，金额为演示虚拟余额。</p>
+
+          <div class="stat-grid">
+            <article class="stat-card">
+              <p class="stat-label">当前余额</p>
+              <p class="stat-value" data-wallet-balance></p>
+              <p><span class="badge badge--warn">演示余额，不涉及真实资金</span></p>
+            </article>
+          </div>
+
+          <div class="admin-list" data-wallet-list></div>
+
+          <div class="empty-state" data-wallet-empty hidden>
+            <p class="h3">暂无余额流水</p>
+            <p>充值、下单或二手成交后，这里会出现对应的收支记录。</p>
+          </div>
+        </section>
+
+        <section id="accountPanel-discount" data-view-panel="discount" role="tabpanel" aria-label="我的抵扣" hidden>
+          <h2 class="h2">我的抵扣</h2>
+          <p class="lead">按持有时间解锁的增值抵扣，规则与实际计算一致。</p>
+
+          <div class="stat-grid">
+            <article class="stat-card">
+              <p class="stat-label">可抵扣总额</p>
+              <p class="stat-value" data-discount-total></p>
+              <p class="chain-note" data-discount-rule></p>
+            </article>
+          </div>
+
+          <div class="admin-list" data-discount-list></div>
+
+          <div class="empty-state" data-discount-empty hidden>
+            <p class="h3">还没有可抵扣的购买记录</p>
+            <p>购买记录满 12 个月后，该件会按实付价出现在这里。</p>
+          </div>
+        </section>
+
+        <section id="accountPanel-preowned" data-view-panel="preowned" role="tabpanel" aria-label="我的二手" hidden>
+          <h2 class="h2">我的二手</h2>
+          <p class="lead">你发布的闲置都在这里，成色与溯源码来自原订单，可以随时下架。</p>
+
+          <div class="admin-list" data-mine-list></div>
+
+          <div class="empty-state" data-mine-empty hidden>
+            <p class="h3">你还没有发布二手</p>
+            <p>在订单里找到那件牛仔单品，点「发布二手」即可生成转让信息。</p>
+          </div>
+        </section>
+
+        <section id="accountPanel-chain" data-view-panel="chain" role="tabpanel" aria-label="我的区块链" hidden>
+          <h2 class="h2">我的区块链</h2>
+          <p class="lead">每笔订单的溯源码与交易哈希在下单时写入，页面只读取、不重算。</p>
+
+          <div class="admin-list" data-chain-list></div>
+
+          <div class="empty-state" data-chain-empty hidden>
+            <p class="h3">暂无链上凭证</p>
+            <p>完成一笔订单后，这里会显示对应的溯源码与交易哈希。</p>
+          </div>
+        </section>
+
+        <section id="accountPanel-favorites" data-view-panel="favorites" role="tabpanel" aria-label="我的收藏" hidden>
+          <h2 class="h2">我的收藏</h2>
+          <p class="lead">收藏的全新商品进详情页，二手商品进二手商城对应的条目。</p>
+
+          <div class="product-grid" data-fav-grid></div>
+
+          <div class="empty-state" data-fav-empty hidden>
+            <p class="h3">收藏夹还是空的</p>
+            <p>在商品卡或详情页点收藏，就会出现在这里。</p>
+            <a class="btn btn--outline" href="shop.html">去全部商品</a>
+          </div>
+        </section>
+
+        <section id="accountPanel-settings" data-view-panel="settings" role="tabpanel" aria-label="设置" hidden>
+          <h2 class="h2">设置</h2>
+          <p class="lead">资料、密码、通知与版本信息。通知开关设置后会保存在本机浏览器。</p>
+
+          <div class="admin-card">
+            <h3 class="admin-card-title">账户资料</h3>
+            <form class="form" data-profile-form novalidate>
+              <div class="field">
+                <label class="field-label" for="acctName">昵称</label>
+                <input class="input" id="acctName" name="name" type="text" maxlength="20" autocomplete="nickname">
+              </div>
+
+              <div class="field">
+                <label class="field-label" for="acctAvatar">头像</label>
+                <input class="input" id="acctAvatar" name="avatar" type="file" accept="image/*">
+                <img data-avatar-preview alt="头像预览" width="48" height="48" hidden>
+                <p class="field-error" data-profile-error></p>
+              </div>
+
+              <div class="form-actions">
+                <button class="btn btn--primary" type="submit" data-profile-save>保存资料</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="admin-card">
+            <h3 class="admin-card-title">修改密码</h3>
+            <form class="form" data-pwd-form novalidate>
+              <div class="field">
+                <label class="field-label" for="pwdOld">当前密码</label>
+                <input class="input" id="pwdOld" name="oldPassword" type="password" autocomplete="current-password">
+              </div>
+
+              <div class="field">
+                <label class="field-label" for="pwdNew">新密码</label>
+                <input class="input" id="pwdNew" name="newPassword" type="password" autocomplete="new-password">
+              </div>
+
+              <div class="field">
+                <label class="field-label" for="pwdNew2">确认新密码</label>
+                <input class="input" id="pwdNew2" name="newPassword2" type="password" autocomplete="new-password">
+                <p class="field-error" data-pwd-error></p>
+              </div>
+
+              <div class="form-actions">
+                <button class="btn btn--outline" type="submit" data-pwd-save>修改密码</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="admin-card">
+            <h3 class="admin-card-title">通知设置</h3>
+            <div class="admin-list" data-notify-list></div>
+          </div>
+
+          <div class="admin-card">
+            <h3 class="admin-card-title">关于</h3>
+            <p class="order-meta"><span>版本 <span data-version></span></span></p>
+            <p class="chain-note">本页是纯前端演示：账号、余额、订单与链上记录都保存在本机浏览器，清空缓存即丢失，不具备安全性，不可用于真实交易。</p>
+            <div class="form-actions">
+              <button class="btn btn--ghost" type="button" data-clear-demo>清空演示数据</button>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <p class="footer-logo">dooyoor<span class="footer-cn">㛊䎟</span></p>
+          <p class="footer-tagline">懂你的美，更懂你的身。东方古字为名，西方丹宁为体。</p>
+          <p class="footer-social">
+            <a class="footer-link" href="contact.html">微信 dooyoor</a>
+            <a class="footer-link" href="contact.html">小红书 @dooyoor</a>
+          </p>
+        </div>
+        <div class="footer-col">
+          <h2 class="footer-title">购物</h2>
+          <a class="footer-link" href="shop.html">全部商品</a>
+          <a class="footer-link" href="shop.html?c=tops">上衣</a>
+          <a class="footer-link" href="shop.html?c=bottoms">裤子</a>
+          <a class="footer-link" href="shop.html?c=skirts">裙子</a>
+          <a class="footer-link" href="shop.html?c=bags">包包</a>
+        </div>
+        <div class="footer-col">
+          <h2 class="footer-title">帮助</h2>
+          <a class="footer-link" href="contact.html#faq">常见问题</a>
+          <a class="footer-link" href="verify.html">溯源查询</a>
+          <a class="footer-link" href="contact.html#faq">尺码与版型</a>
+          <a class="footer-link" href="contact.html#faq">配送与退换</a>
+          <a class="footer-link" href="contact.html">联系我们</a>
+        </div>
+        <div class="footer-col footer-news">
+          <h2 class="footer-title">订阅新品通知</h2>
+          <p class="footer-note">每月一封信，只讲新面料与新款式，不发广告。</p>
+          <form class="news-form" data-news-form novalidate>
+            <label class="u-sr-only" for="newsEmail">邮箱地址</label>
+            <input class="input" id="newsEmail" name="email" type="email" placeholder="你的邮箱" autocomplete="email" required>
+            <button class="btn btn--outline" type="submit">订阅</button>
+          </form>
+          <p class="form-note" data-news-note></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span data-year>2025</span> dooyoor 㛊䎟 · 保留所有权利</p>
+        <p class="footer-legal"><a class="footer-link" href="#">隐私政策</a><a class="footer-link" href="#">服务条款</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <nav class="bottom-nav" aria-label="底部导航">
+    <a class="bottom-nav-item" href="index.html" data-nav="index">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-6 8 6"/><path d="M6 10v9h12v-9"/></svg>
+      <span class="bottom-nav-label">首页</span>
+    </a>
+    <a class="bottom-nav-item" href="shop.html" data-nav="shop">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16l-1.5 13h-13L4 6Z"/><path d="M9 6a3 3 0 0 1 6 0"/></svg>
+      <span class="bottom-nav-label">商品</span>
+    </a>
+    <a class="bottom-nav-item" href="preowned.html" data-nav="preowned">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 0 1 13-6"/><path d="M20 12a8 8 0 0 1-13 6"/><path d="M17 3v3h-3"/><path d="M7 21v-3h3"/></svg>
+      <span class="bottom-nav-label">二手</span>
+    </a>
+    <a class="bottom-nav-item" href="cart.html" data-nav="cart">
+      <span class="bottom-nav-icon-wrap">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h12l1 12H5L6 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <span class="cart-badge" data-cart-count hidden>0</span>
+      </span>
+      <span class="bottom-nav-label">购物袋</span>
+    </a>
+    <a class="bottom-nav-item" href="account.html" data-nav="account">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c0-3.9 3.1-6 7-6s7 2.1 7 6"/></svg>
+      <span class="bottom-nav-label">我的</span>
+    </a>
+  </nav>
+  <div class="toast" data-toast role="status" aria-live="polite"></div>
+
+  <div class="admin-modal" data-modal="confirm" role="dialog" aria-modal="true" aria-labelledby="confirmTitle" hidden>
+    <div class="admin-modal-backdrop" data-modal-cancel></div>
+    <div class="admin-modal-panel">
+      <div class="admin-modal-head">
+        <h2 class="admin-modal-title" id="confirmTitle" data-modal-title>确认操作</h2>
+        <button class="icon-btn" type="button" data-modal-close aria-label="关闭">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+      <div class="admin-modal-body">
+        <p data-modal-text></p>
+      </div>
+      <div class="admin-modal-foot">
+        <button class="btn btn--outline" type="button" data-modal-cancel>取消</button>
+        <button class="btn btn--primary" type="button" data-modal-ok>确定</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="admin-modal" data-modal="profile" role="dialog" aria-modal="true" aria-labelledby="profileModalTitle" hidden>
+    <div class="admin-modal-backdrop" data-modal-cancel></div>
+    <div class="admin-modal-panel">
+      <div class="admin-modal-head">
+        <h2 class="admin-modal-title" id="profileModalTitle" data-modal-title>编辑资料</h2>
+        <button class="icon-btn" type="button" data-modal-close aria-label="关闭">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+      <div class="admin-modal-body">
+        <div class="field">
+          <label class="field-label" for="editName">昵称</label>
+          <input class="input" id="editName" name="name" type="text" maxlength="20" autocomplete="nickname">
+        </div>
+
+        <div class="field">
+          <label class="field-label" for="editAvatar">头像</label>
+          <input class="input" id="editAvatar" name="avatar" type="file" accept="image/*">
+          <img data-edit-avatar-preview alt="头像预览" width="48" height="48" hidden>
+        </div>
+      </div>
+      <div class="admin-modal-foot">
+        <button class="btn btn--outline" type="button" data-edit-cancel>取消</button>
+        <button class="btn btn--primary" type="button" data-edit-save>保存</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/site-config.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/fav.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/wallet.js"></script>
+  <script src="js/orders.js"></script>
+  <script src="js/preowned.js"></script>
+  <script src="js/account-page.js"></script>
+</body>
+</html>

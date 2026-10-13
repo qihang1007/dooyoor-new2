@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="l2t">
+  <title id="l2t">DOOYOOR Lookbook 02 · 石洗浅蓝斜纹与垂坠</title>
+  <defs>
+    <linearGradient id="l2g1" x1="0" y1="0" x2=".7" y2="1">
+      <stop offset="0" stop-color="#A9BCCF"/>
+      <stop offset=".55" stop-color="#8FA6BE"/>
+      <stop offset="1" stop-color="#7C93AE"/>
+    </linearGradient>
+    <linearGradient id="l2g2" x1="0" y1="0" x2=".6" y2="1">
+      <stop offset="0" stop-color="#F5F6F8"/>
+      <stop offset="1" stop-color="#EDEFF2"/>
+    </linearGradient>
+    <linearGradient id="l2g3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F5F6F8" stop-opacity=".38"/>
+      <stop offset="1" stop-color="#F5F6F8" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="l2p1" width="20" height="20" patternUnits="userSpaceOnUse" patternTransform="rotate(63)">
+      <path d="M0 10h20" fill="none" stroke="#F5F6F8" stroke-opacity=".32" stroke-width="2"/>
+    </pattern>
+    <filter id="l2b1" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+  <rect width="800" height="1000" fill="url(#l2g2)"/>
+  <path d="M0 0H800V286C640 312 500 262 340 278 180 294 90 254 0 262Z" fill="url(#l2g1)"/>
+  <path d="M0 0H800V286C640 312 500 262 340 278 180 294 90 254 0 262Z" fill="url(#l2p1)"/>
+  <path d="M0 262C90 254 180 294 340 278 500 262 640 312 800 286" fill="none" stroke="#3D5473" stroke-opacity=".3" stroke-width="3"/>
+  <path d="M0 1000H800V700C640 674 500 724 340 708 180 692 90 732 0 724Z" fill="url(#l2g1)"/>
+  <path d="M0 1000H800V700C640 674 500 724 340 708 180 692 90 732 0 724Z" fill="url(#l2p1)"/>
+  <path d="M0 724C90 732 180 692 340 708 500 724 640 674 800 700" fill="none" stroke="#1B2A42" stroke-opacity=".28" stroke-width="3"/>
+  <rect width="800" height="1000" fill="url(#l2g3)"/>
+  <ellipse cx="620" cy="140" rx="250" ry="130" fill="#F5F6F8" opacity=".4" filter="url(#l2b1)"/>
+  <ellipse cx="180" cy="880" rx="260" ry="140" fill="#F5F6F8" opacity=".3" filter="url(#l2b1)"/>
+  <path d="M180 0V400" fill="none" stroke="#1B2A42" stroke-opacity=".16" stroke-width="2"/>
+  <path d="M540 0V400" fill="none" stroke="#1B2A42" stroke-opacity=".12" stroke-width="2"/>
+  <path d="M260 1000V640" fill="none" stroke="#1B2A42" stroke-opacity=".14" stroke-width="2"/>
+  <path d="M700 1000V620" fill="none" stroke="#1B2A42" stroke-opacity=".1" stroke-width="2"/>
+  <path d="M0 218C90 210 180 250 340 234 500 218 640 268 800 242" fill="none" stroke="#A85A16" stroke-width="4" stroke-dasharray="24 14" stroke-linecap="round" stroke-opacity=".85"/>
+  <path d="M0 240C90 232 180 272 340 256 500 240 640 290 800 264" fill="none" stroke="#C97A2B" stroke-width="2" stroke-dasharray="24 14" stroke-linecap="round" stroke-opacity=".65"/>
+  <path d="M0 752C90 760 180 720 340 736 500 752 640 702 800 728" fill="none" stroke="#A85A16" stroke-width="4" stroke-dasharray="24 14" stroke-linecap="round" stroke-opacity=".85"/>
+  <path d="M0 780C90 788 180 748 340 764 500 780 640 730 800 756" fill="none" stroke="#C97A2B" stroke-width="2" stroke-dasharray="24 14" stroke-linecap="round" stroke-opacity=".65"/>
+</svg>

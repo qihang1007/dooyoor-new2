@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="c2t">
+  <title id="c2t">DOOYOOR 系列 · 赤耳丹宁深靛与布边线</title>
+  <defs>
+    <linearGradient id="c2g1" x1="0" y1="0" x2=".7" y2="1">
+      <stop offset="0" stop-color="#3D5473"/>
+      <stop offset=".5" stop-color="#2B3F5C"/>
+      <stop offset="1" stop-color="#0E1620"/>
+    </linearGradient>
+    <linearGradient id="c2g2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1B2A42"/>
+      <stop offset="1" stop-color="#0E1620"/>
+    </linearGradient>
+    <linearGradient id="c2g3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#A9BCCF" stop-opacity=".3"/>
+      <stop offset="1" stop-color="#A9BCCF" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="c2p1" width="20" height="20" patternUnits="userSpaceOnUse" patternTransform="rotate(63)">
+      <path d="M0 10h20" fill="none" stroke="#A9BCCF" stroke-opacity=".16" stroke-width="2"/>
+    </pattern>
+    <filter id="c2b1" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="12"/>
+    </filter>
+  </defs>
+  <rect width="800" height="1000" fill="url(#c2g1)"/>
+  <rect width="800" height="1000" fill="url(#c2p1)"/>
+  <rect width="800" height="1000" fill="url(#c2g3)"/>
+  <ellipse cx="200" cy="300" rx="260" ry="200" fill="#7C93AE" opacity=".2" filter="url(#c2b1)"/>
+  <ellipse cx="620" cy="820" rx="280" ry="190" fill="#0E1620" opacity=".4" filter="url(#c2b1)"/>
+  <rect x="620" y="0" width="180" height="1000" fill="url(#c2g2)"/>
+  <rect x="620" y="0" width="180" height="1000" fill="url(#c2p1)"/>
+  <path d="M620 0V1000" fill="none" stroke="#0E1620" stroke-width="6" stroke-opacity=".55"/>
+  <path d="M646 0V1000" fill="none" stroke="#D9C2A0" stroke-width="5"/>
+  <path d="M668 0V1000" fill="none" stroke="#A9BCCF" stroke-width="2" stroke-opacity=".7"/>
+  <path d="M768 0V1000" fill="none" stroke="#0E1620" stroke-width="3" stroke-opacity=".5"/>
+  <path d="M540 0V1000" fill="none" stroke="#A85A16" stroke-width="3" stroke-dasharray="24 16" stroke-linecap="round" stroke-opacity=".85"/>
+  <path d="M564 0V1000" fill="none" stroke="#C97A2B" stroke-width="2" stroke-dasharray="24 16" stroke-linecap="round" stroke-opacity=".6"/>
+</svg>

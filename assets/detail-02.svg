@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="d2t">
+  <title id="d2t">DOOYOOR 面料特写 · 人字纹纬密织与铜铆钉</title>
+  <defs>
+    <linearGradient id="d2g1" x1="0" y1="0" x2=".8" y2="1">
+      <stop offset="0" stop-color="#3D5473"/>
+      <stop offset=".55" stop-color="#2B3F5C"/>
+      <stop offset="1" stop-color="#0E1620"/>
+    </linearGradient>
+    <pattern id="d2p1" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M0 20L14 6l14 14" fill="none" stroke="#A9BCCF" stroke-opacity=".2" stroke-width="2"/>
+    </pattern>
+    <pattern id="d2p2" width="12" height="12" patternUnits="userSpaceOnUse">
+      <path d="M0 6H12" fill="none" stroke="#F5F6F8" stroke-opacity=".09" stroke-width="1.5"/>
+    </pattern>
+    <linearGradient id="d2g2" x1="0" y1="0" x2=".6" y2="1">
+      <stop offset="0" stop-color="#C97A2B"/>
+      <stop offset="1" stop-color="#A85A16"/>
+    </linearGradient>
+    <linearGradient id="d2g3" x1="0" y1="0" x2=".7" y2="1">
+      <stop offset="0" stop-color="#F5F6F8" stop-opacity=".14"/>
+      <stop offset="1" stop-color="#F5F6F8" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="d2b1" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+  <rect width="800" height="1000" fill="url(#d2g1)"/>
+  <rect width="800" height="1000" fill="url(#d2p1)"/>
+  <rect width="800" height="1000" fill="url(#d2p2)"/>
+  <rect width="800" height="1000" fill="url(#d2g3)"/>
+  <ellipse cx="150" cy="150" rx="260" ry="200" fill="#A9BCCF" opacity=".14" filter="url(#d2b1)"/>
+  <rect x="300" y="0" width="60" height="1000" fill="#0E1620" opacity=".18"/>
+  <path d="M314 0V1000" fill="none" stroke="#A85A16" stroke-width="4" stroke-dasharray="24 14" stroke-linecap="round"/>
+  <path d="M348 0V1000" fill="none" stroke="#C97A2B" stroke-width="4" stroke-dasharray="24 14" stroke-linecap="round"/>
+  <ellipse cx="632" cy="322" rx="46" ry="42" fill="#0E1620" opacity=".35" filter="url(#d2b1)"/>
+  <circle cx="618" cy="300" r="42" fill="url(#d2g2)"/>
+  <circle cx="618" cy="300" r="26" fill="#A85A16" opacity=".45"/>
+  <circle cx="618" cy="300" r="34" fill="none" stroke="#D9C2A0" stroke-opacity=".5" stroke-width="2"/>
+  <ellipse cx="604" cy="284" rx="12" ry="8" fill="#D9C2A0" opacity=".85"/>
+</svg>

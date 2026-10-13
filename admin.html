@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>商家后台 · dooyoor 㛊䎟</title>
+  <meta name="description" content="dooyoor 㛊䎟 商家后台演示：经营概览、商品管理、发布新品、广告栏装修、用户管理、订单管理与溯源记录。纯静态、零外链，登录与数据均为前端演示。">
+  <meta name="theme-color" content="#F5F6F8">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="商家后台 · dooyoor 㛊䎟">
+  <meta property="og:description" content="dooyoor 㛊䎟 商家后台演示：经营概览、商品管理、发布新品、广告栏装修、用户管理、订单管理与溯源记录。">
+  <meta property="og:image" content="assets/hero.svg">
+  <link rel="icon" href="assets/logo-mark.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/logo-mark.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="admin">
+
+  <div class="admin-login" data-admin-login>
+    <div class="admin-login-card">
+      <h1 class="admin-login-title">DOOYOOR 后台</h1>
+      <p class="admin-login-sub">dooyoor 㛊䎟 · 商家后台演示</p>
+
+      <form class="form" data-admin-login-form novalidate>
+        <div class="field">
+          <label class="field-label" for="adminAccount">账号</label>
+          <input class="input" id="adminAccount" name="account" type="text" autocomplete="username" spellcheck="false" required>
+          <p class="field-error" data-admin-login-error-account></p>
+        </div>
+
+        <div class="field">
+          <label class="field-label" for="adminPassword">密码</label>
+          <input class="input" id="adminPassword" name="password" type="password" autocomplete="current-password" required>
+          <p class="field-error" data-admin-login-error-password></p>
+        </div>
+
+        <button class="btn btn--primary btn--block" type="submit">登录</button>
+      </form>
+
+      <p class="admin-login-tip">演示账号 <strong>admin</strong>，密码 <strong>dooyoor2025</strong>。本轮登录状态只留在本页内存，<strong>不写入任何存储</strong>，刷新即回到登录门。纯前端演示，不具备任何安全性，请勿用于真实环境。</p>
+    </div>
+  </div>
+
+  <div class="admin-shell" data-admin-shell hidden>
+
+    <aside class="admin-side">
+      <div class="admin-side-head">
+        <span class="admin-logo">dooyoor</span>
+      </div>
+
+      <nav class="admin-nav" aria-label="后台导航">
+        <button class="admin-nav-link is-active" type="button" data-view="dashboard" aria-current="page">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-6 8 6"/><path d="M6 10v9h12v-9"/></svg>
+          <span>概览</span>
+        </button>
+        <button class="admin-nav-link" type="button" data-view="products">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h12l1 12H5L6 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+          <span>商品管理</span>
+        </button>
+        <button class="admin-nav-link" type="button" data-view="add">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+          <span>发布新品</span>
+        </button>
+        <button class="admin-nav-link" type="button" data-view="banner">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18v12H3z"/><path d="M3 14l5-4 4 3 4-4 5 5"/></svg>
+          <span>广告栏装修</span>
+        </button>
+        <button class="admin-nav-link" type="button" data-view="users">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3 19c0-3.3 2.7-5.4 6-5.4s6 2.1 6 5.4"/><path d="M16 5.5a3 3 0 0 1 0 5.6"/><path d="M18 19c0-2.2-.7-3.9-2-5"/></svg>
+          <span>用户管理</span>
+        </button>
+        <button class="admin-nav-link" type="button" data-view="orders">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h11v10H3z"/><path d="M14 10h4l3 3v4h-7z"/><circle cx="7" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/></svg>
+          <span>订单管理</span>
+        </button>
+        <button class="admin-nav-link" type="button" data-view="chain">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 5-3 8-7 9-4-1-7-4-7-9V6l7-3Z"/><path d="M9 12l2 2 4-4"/></svg>
+          <span>溯源记录</span>
+        </button>
+      </nav>
+    </aside>
+
+    <div class="admin-drawer" id="adminDrawer" data-admin-drawer hidden>
+      <div class="admin-drawer-backdrop" data-admin-drawer-close></div>
+      <aside class="admin-drawer-panel" role="dialog" aria-modal="true" aria-label="后台菜单">
+        <div class="admin-side-head">
+          <span class="admin-logo">dooyoor</span>
+          <button class="icon-btn" type="button" aria-label="关闭后台菜单" data-admin-drawer-close>
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+          </button>
+        </div>
+
+        <nav class="admin-nav" aria-label="后台移动端导航">
+          <button class="admin-nav-link is-active" type="button" data-view="dashboard" aria-current="page">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-6 8 6"/><path d="M6 10v9h12v-9"/></svg>
+            <span>概览</span>
+          </button>
+          <button class="admin-nav-link" type="button" data-view="products">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h12l1 12H5L6 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+            <span>商品管理</span>
+          </button>
+          <button class="admin-nav-link" type="button" data-view="add">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+            <span>发布新品</span>
+          </button>
+          <button class="admin-nav-link" type="button" data-view="banner">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18v12H3z"/><path d="M3 14l5-4 4 3 4-4 5 5"/></svg>
+            <span>广告栏装修</span>
+          </button>
+          <button class="admin-nav-link" type="button" data-view="users">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3 19c0-3.3 2.7-5.4 6-5.4s6 2.1 6 5.4"/><path d="M16 5.5a3 3 0 0 1 0 5.6"/><path d="M18 19c0-2.2-.7-3.9-2-5"/></svg>
+            <span>用户管理</span>
+          </button>
+          <button class="admin-nav-link" type="button" data-view="orders">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h11v10H3z"/><path d="M14 10h4l3 3v4h-7z"/><circle cx="7" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/></svg>
+            <span>订单管理</span>
+          </button>
+          <button class="admin-nav-link" type="button" data-view="chain">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 5-3 8-7 9-4-1-7-4-7-9V6l7-3Z"/><path d="M9 12l2 2 4-4"/></svg>
+            <span>溯源记录</span>
+          </button>
+        </nav>
+      </aside>
+    </div>
+
+    <main class="admin-main" id="adminMain">
+
+      <header class="admin-topbar">
+        <div class="form-actions">
+          <button class="btn btn--ghost admin-menu-btn" type="button" aria-label="打开后台菜单" aria-expanded="false" aria-controls="adminDrawer" data-admin-menu-toggle>
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+          </button>
+          <h1 class="admin-title" data-admin-view-title>概览</h1>
+        </div>
+
+        <div class="admin-user">
+          <span class="admin-avatar" aria-hidden="true" data-admin-avatar></span>
+          <span class="admin-user-name" data-admin-user-name></span>
+          <button class="btn btn--ghost" type="button" data-admin-logout>退出登录</button>
+        </div>
+      </header>
+
+      <section class="page-head" data-view="dashboard" aria-label="经营概览">
+        <div class="stat-grid" data-admin-stats></div>
+
+        <div class="admin-card">
+          <h2 class="admin-card-title">最近订单</h2>
+          <div class="admin-list" data-admin-recent-orders></div>
+        </div>
+
+        <div class="admin-card">
+          <h2 class="admin-card-title">数据说明</h2>
+          <p class="chain-note">本页商品的库存与价格写入浏览器本地存储 <strong>dooyoor.admin.products.v1</strong>，订单与用户读取前台真实数据 <strong>dooyoor.users.v1</strong>。清空浏览器数据即全部丢失。</p>
+        </div>
+      </section>
+
+      <section class="page-head" data-view="products" aria-label="商品管理" hidden>
+        <div class="admin-toolbar">
+          <label class="u-sr-only" for="adminProductSearch">搜索商品</label>
+          <input class="input" id="adminProductSearch" type="search" placeholder="搜索商品名、英文名或溯源码" autocomplete="off" spellcheck="false" data-admin-product-search>
+
+          <label class="u-sr-only" for="adminConditionFilter">按成色筛选</label>
+          <select class="select" id="adminConditionFilter" data-admin-condition>
+            <option value="all">全部成色</option>
+            <option value="new">全新</option>
+            <option value="used">认证二手</option>
+          </select>
+        </div>
+
+        <div class="admin-list" data-admin-products></div>
+
+        <div class="empty-state" data-admin-products-empty hidden>
+          <p class="h3">没有找到相关商品</p>
+          <p>换一个关键词，或把成色筛选切回「全部成色」。</p>
+          <button class="btn btn--outline" type="button" data-admin-products-reset>清除筛选</button>
+        </div>
+      </section>
+
+      <section class="page-head" data-view="add" aria-label="发布新品" hidden>
+        <form class="form" data-admin-add-form novalidate>
+
+          <div class="field">
+            <label class="field-label" for="addName">商品名称 <span class="req">*</span></label>
+            <input class="input" id="addName" name="name" type="text" autocomplete="off" spellcheck="false" required>
+            <p class="field-error" data-admin-add-error-name></p>
+          </div>
+
+          <div class="field">
+            <label class="field-label" for="addPrice">现价（元） <span class="req">*</span></label>
+            <input class="input" id="addPrice" name="price" type="text" inputmode="numeric" autocomplete="off" spellcheck="false" required>
+            <p class="field-error" data-admin-add-error-price></p>
+          </div>
+
+          <div class="field">
+            <label class="field-label" for="addCompareAt">原价（元，可留空）</label>
+            <input class="input" id="addCompareAt" name="compareAt" type="text" inputmode="numeric" autocomplete="off" spellcheck="false">
+            <p class="field-error" data-admin-add-error-compare></p>
+          </div>
+
+          <div class="field">
+            <label class="field-label" for="addCategory">分类</label>
+            <select class="select" id="addCategory" name="category" data-admin-add-category></select>
+            <p class="field-error" data-admin-add-error-category></p>
+          </div>
+
+          <div class="field">
+            <label class="field-label" for="addCondition">成色</label>
+            <select class="select" id="addCondition" name="condition" data-admin-add-condition></select>
+            <p class="field-error" data-admin-add-error-condition></p>
+          </div>
+
+          <div class="field">
+            <label class="field-label" for="addStock">库存（件） <span class="req">*</span></label>
+            <input class="input" id="addStock" name="stock" type="text" inputmode="numeric" autocomplete="off" spellcheck="false" required>
+            <p class="field-error" data-admin-add-error-stock></p>
+          </div>
+
+          <div class="field">
+            <span class="field-label">尺码（可多选）</span>
+            <div class="size-list" data-admin-add-sizes role="group" aria-label="尺码多选"></div>
+          </div>
+
+          <div class="field">
+            <label class="field-label" for="addColor">颜色（输入后按回车添加）</label>
+            <div class="form-actions">
+              <input class="input" id="addColor" name="color" type="text" autocomplete="off" spellcheck="false" placeholder="例如：云雾白" data-admin-add-color-input>
+              <button class="btn btn--outline btn--sm" type="button" data-admin-add-color-add>添加颜色</button>
+            </div>
+            <div class="form-actions" data-admin-add-color-presets></div>
+            <div class="form-actions" data-admin-add-colors></div>
+          </div>
+
+          <div class="field">
+            <label class="field-label" for="addBadge">角标文案（可留空）</label>
+            <input class="input" id="addBadge" name="badge" type="text" autocomplete="off" spellcheck="false" placeholder="例如：新品 / 限量">
+          </div>
+
+          <div class="field">
+            <label class="field-label" for="addShort">一句话卖点</label>
+            <input class="input" id="addShort" name="short" type="text" autocomplete="off" spellcheck="false">
+          </div>
+
+          <div class="field">
+            <label class="field-label" for="addFabric">面料说明</label>
+            <textarea class="textarea" id="addFabric" name="fabric" rows="3"></textarea>
+          </div>
+
+          <div class="field">
+            <label class="field-label" for="addImages">商品图片（可多选，最多 5 张）</label>
+            <input class="input" id="addImages" name="images" type="file" accept="image/*" multiple data-admin-add-images>
+            <p class="chain-note">图片会在本机压缩到最长边 1000px、JPEG 质量 0.8 后以 data URL 保存，因此图片越多越可能占满本地存储。缩略图可拖动排序，第一张作为封面。</p>
+            <p class="field-error" data-admin-add-error-images></p>
+            <div class="gallery-thumbs" data-admin-add-thumbs></div>
+            <div class="form-actions" data-admin-add-thumbs-actions hidden></div>
+          </div>
+
+          <div class="form-actions">
+            <button class="btn btn--outline" type="button" data-admin-add-reset>重置</button>
+            <button class="btn btn--primary" type="submit">发布商品</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="page-head" data-view="banner" aria-label="广告栏装修" hidden>
+        <div class="admin-card">
+          <h2 class="admin-card-title">前台首页预览</h2>
+          <div class="banner" data-admin-banner-preview>
+            <div class="banner-swiper" data-admin-banner-swiper>
+              <div class="banner-track" data-admin-banner-track></div>
+              <div class="banner-dots" data-admin-banner-dots></div>
+            </div>
+          </div>
+          <p class="chain-note" data-admin-banner-preview-note>只展示状态为「投放中」的广告，每 4 秒自动轮播。</p>
+        </div>
+
+        <div class="admin-toolbar">
+          <button class="btn btn--primary" type="button" data-admin-banner-add>添加广告</button>
+        </div>
+
+        <div class="admin-list" data-admin-banners></div>
+
+        <div class="empty-state" data-admin-banners-empty hidden>
+          <p class="h3">还没有广告</p>
+          <p>点「添加广告」新建一条，保存后前台首页刷新即可看到。</p>
+        </div>
+      </section>
+
+      <section class="page-head" data-view="users" aria-label="用户管理" hidden>
+        <div class="admin-toolbar">
+          <div class="form-actions">
+            <label class="field-label" for="adminUserSelectAll">全选</label>
+            <input id="adminUserSelectAll" type="checkbox" data-admin-users-all>
+          </div>
+          <button class="btn btn--outline" type="button" data-admin-users-delete>批量删除</button>
+        </div>
+
+        <div class="admin-list" data-admin-users></div>
+
+        <div class="empty-state" data-admin-users-empty hidden>
+          <p class="h3">暂无注册用户</p>
+          <p>前台注册页注册一个账号后，这里会出现真实的用户记录。</p>
+        </div>
+      </section>
+
+      <section class="page-head" data-view="orders" aria-label="订单管理" hidden>
+        <div class="admin-toolbar">
+          <button class="filter-chip is-active" type="button" data-admin-order-status="all" aria-pressed="true">全部</button>
+          <button class="filter-chip" type="button" data-admin-order-status="pending" aria-pressed="false">待发货</button>
+          <button class="filter-chip" type="button" data-admin-order-status="shipped" aria-pressed="false">已发货</button>
+          <button class="filter-chip" type="button" data-admin-order-status="done" aria-pressed="false">已完成</button>
+          <button class="filter-chip" type="button" data-admin-order-status="refund" aria-pressed="false">退款中</button>
+        </div>
+
+        <div class="admin-list" data-admin-orders></div>
+
+        <div class="empty-state" data-admin-orders-empty hidden>
+          <p class="h3">该状态下暂无订单</p>
+          <p>切换其他状态，或选择「全部」查看全部订单。</p>
+        </div>
+      </section>
+
+      <section class="page-head" data-view="chain" aria-label="溯源记录" hidden>
+        <div class="admin-list" data-admin-chain></div>
+
+        <div class="empty-state" data-admin-chain-empty hidden>
+          <p class="h3">暂无溯源记录</p>
+          <p>商品出厂上链后，这里会显示溯源码与区块信息。</p>
+        </div>
+      </section>
+
+    </main>
+
+    <div class="admin-modal" data-admin-modal hidden>
+      <div class="admin-modal-backdrop" data-admin-modal-close></div>
+      <div class="admin-modal-panel" role="dialog" aria-modal="true" aria-labelledby="adminModalTitle">
+        <div class="admin-modal-head">
+          <h2 class="admin-modal-title" id="adminModalTitle">编辑商品</h2>
+          <button class="icon-btn" type="button" aria-label="关闭编辑弹窗" data-admin-modal-close>
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+          </button>
+        </div>
+
+        <form data-admin-edit-form novalidate>
+          <div class="admin-modal-body form">
+            <div class="admin-row-meta" data-admin-edit-name></div>
+
+            <div class="field">
+              <label class="field-label" for="adminEditPrice">价格（元）</label>
+              <input class="input" id="adminEditPrice" name="price" type="text" inputmode="numeric" autocomplete="off" spellcheck="false">
+              <p class="field-error" data-admin-edit-error-price></p>
+            </div>
+
+            <div class="field">
+              <label class="field-label" for="adminEditStock">库存（件）</label>
+              <input class="input" id="adminEditStock" name="stock" type="text" inputmode="numeric" autocomplete="off" spellcheck="false">
+              <p class="field-error" data-admin-edit-error-stock></p>
+            </div>
+
+            <div class="admin-row-meta">保存后写入本地存储 dooyoor.admin.products.v1，刷新后仍在。</div>
+          </div>
+
+          <div class="admin-modal-foot">
+            <button class="btn btn--outline" type="button" data-admin-modal-close>取消</button>
+            <button class="btn btn--primary" type="submit">保存</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="admin-modal" data-admin-banner-modal hidden>
+      <div class="admin-modal-backdrop" data-admin-banner-close></div>
+      <div class="admin-modal-panel" role="dialog" aria-modal="true" aria-labelledby="adminBannerTitle">
+        <div class="admin-modal-head">
+          <h2 class="admin-modal-title" id="adminBannerTitle">添加广告</h2>
+          <button class="icon-btn" type="button" aria-label="关闭广告弹窗" data-admin-banner-close>
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+          </button>
+        </div>
+
+        <form data-admin-banner-form novalidate>
+          <div class="admin-modal-body form">
+            <div class="field">
+              <label class="field-label" for="bannerImage">图片地址（站内相对路径或 https）</label>
+              <input class="input" id="bannerImage" name="image" type="text" autocomplete="off" spellcheck="false" placeholder="assets/hero.svg">
+              <p class="field-error" data-admin-banner-error-image></p>
+            </div>
+
+            <div class="field">
+              <label class="field-label" for="bannerUpload">或上传本地图片（会压缩到最长边 1000px）</label>
+              <input class="input" id="bannerUpload" name="upload" type="file" accept="image/*" data-admin-banner-upload>
+              <div class="gallery-thumbs" data-admin-banner-thumb></div>
+            </div>
+
+            <div class="field">
+              <label class="field-label" for="bannerTitle">标题 <span class="req">*</span></label>
+              <input class="input" id="bannerTitle" name="title" type="text" autocomplete="off" spellcheck="false">
+              <p class="field-error" data-admin-banner-error-title></p>
+            </div>
+
+            <div class="field">
+              <label class="field-label" for="bannerDesc">描述</label>
+              <input class="input" id="bannerDesc" name="desc" type="text" autocomplete="off" spellcheck="false">
+            </div>
+
+            <div class="field">
+              <label class="field-label" for="bannerLink">跳转链接（站内相对路径或 https://）</label>
+              <input class="input" id="bannerLink" name="link" type="text" autocomplete="off" spellcheck="false" placeholder="shop.html 或 https://example.com">
+              <p class="field-error" data-admin-banner-error-link></p>
+            </div>
+
+            <div class="field">
+              <label class="field-label" for="bannerLinkText">按钮文案</label>
+              <input class="input" id="bannerLinkText" name="linkText" type="text" autocomplete="off" spellcheck="false" placeholder="了解详情">
+            </div>
+
+            <div class="field">
+              <label class="field-label" for="bannerSort">排序（数字小的在前）</label>
+              <input class="input" id="bannerSort" name="sort" type="number" inputmode="numeric" min="1" step="1" autocomplete="off" spellcheck="false">
+              <p class="field-error" data-admin-banner-error-sort></p>
+            </div>
+
+            <div class="form-actions">
+              <label class="field-label" for="bannerActive">投放中</label>
+              <input id="bannerActive" name="active" type="checkbox">
+            </div>
+
+            <div class="admin-row-meta">保存后写入本地存储 dooyoor.banners.v1，前台首页刷新后生效。</div>
+          </div>
+
+          <div class="admin-modal-foot">
+            <button class="btn btn--outline" type="button" data-admin-banner-close>取消</button>
+            <button class="btn btn--primary" type="submit">保存广告</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="admin-modal" data-admin-confirm hidden>
+      <div class="admin-modal-backdrop" data-admin-confirm-close></div>
+      <div class="admin-modal-panel" role="dialog" aria-modal="true" aria-labelledby="adminConfirmTitle">
+        <div class="admin-modal-head">
+          <h2 class="admin-modal-title" id="adminConfirmTitle">请确认</h2>
+          <button class="icon-btn" type="button" aria-label="关闭确认弹窗" data-admin-confirm-close>
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+          </button>
+        </div>
+
+        <div class="admin-modal-body">
+          <p class="admin-row-meta" data-admin-confirm-text></p>
+        </div>
+
+        <div class="admin-modal-foot">
+          <button class="btn btn--outline" type="button" data-admin-confirm-close>取消</button>
+          <button class="btn btn--primary" type="button" data-admin-confirm-ok>确认删除</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="toast" data-toast role="status" aria-live="polite"></div>
+
+  <script src="js/site-config.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>
