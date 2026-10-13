@@ -2460,6 +2460,43 @@ main { padding-bottom: calc(var(--bottomnav-h) + var(--safe-b) + 32px); }
 .pdp-short-story .quote p { margin-bottom: .35em; }
 .pdp-short-story .quote p:last-child { margin-bottom: 0; }
 
+/* ==========================================================================
+   32. 三种场景：桌面三栏 → 手机横向滑动三页
+   只作用于 .pillars--swipe，不影响其它复用 .pillars 的板块。
+   ========================================================================== */
+.pillars--swipe-hint { display: none; }
+
+@media (max-width: 767px) {
+  .pillars--swipe {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 12px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: var(--gutter);
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-inline: var(--gutter);
+    margin-inline: calc(var(--gutter) * -1);
+    padding-bottom: 6px;
+  }
+  .pillars--swipe::-webkit-scrollbar { display: none; }
+
+  .pillars--swipe > .pillar {
+    flex: 0 0 84%;
+    min-width: 0;
+    scroll-snap-align: start;
+  }
+
+  .pillars--swipe-hint {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 12px;
+    color: var(--ink-3);
+  }
+}
+
 
 
 
