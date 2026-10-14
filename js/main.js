@@ -14,6 +14,113 @@
     }
   }
 
+  /* ==========================================================================
+     三种场景：手机端叠压卡堆
+     [data-card-stack] 容器在 <768px 时，离容器中心越远的卡片越「退后」，
+     视觉上是一叠卡被逐张揭开；滑动惯性完全交给浏览器原生横向滚动。
+     桌面端（≥768px）只清空运行时样式，保持原有三栏 grid。
+     ========================================================================== */
+  function initCardStacks() {
+    var stacks = document.querySelectorAll('[data-card-stack]');
+    if (!stacks.length) { return; }
+
+    var desktopQuery = window.matchMedia ? window.matchMedia('(min-width: 768px)') : null;
+    var reduceQuery = window.matchMedia ? window.matchMedia('(prefers-reduced-motion: reduce)') : null;
+
+    function reducedMotion() {
+      return !!(reduceQuery && reduceQuery.matches);
+    }
+
+    // 桌面 / 特殊状态：彻底还原成普通卡片
+    function clearCards(cards) {
+      for (var c = 0; c < cards.length; c++) {
+        cards[c].style.transform = '';
+        cards[c].style.opacity = '';
+        cards[c].style.zIndex = '';
+      }
+    }
+
+    // 降低动效偏好：不缩放不位移，只保留居中吸附
+    function flattenCards(cards) {
+      for (var f = 0; f < cards.length; f++) {
+        cards[f].style.transform = 'none';
+        cards[f].style.opacity = '1';
+        cards[f].style.zIndex = '';
+      }
+    }
+
+    // 只收直接子级里的 .pillar，任何页面都安全
+    var units = [];
+    for (var s = 0; s < stacks.length; s++) {
+      var kids = stacks[s].children;
+      var cards = [];
+      for (var k = 0; k < kids.length; k++) {
+        if (kids[k].classList && kids[k].classList.contains('pillar')) { cards.push(kids[k]); }
+      }
+      if (cards.length) { units.push({ el: stacks[s], cards: cards, frame: 0 }); }
+    }
+    if (!units.length) { return; }
+
+    function paint(unit) {
+      unit.frame = 0;
+      var list = unit.cards;
+
+      if (desktopQuery && desktopQuery.matches) { clearCards(list); return; }
+      if (reducedMotion()) { flattenCards(list); return; }
+
+      // 每帧只读一次滚动容器自身的 rect，不放进内层循环
+      var box = unit.el.getBoundingClientRect();
+      var center = box.left + box.width / 2;
+
+      for (var i = 0; i < list.length; i++) {
+        var rect = list[i].getBoundingClientRect();
+        var width = rect.width || 1;
+        // 0 = 卡片正处于容器中心，1 = 相邻一整张卡片的距离
+        var d = Math.abs(rect.left + width / 2 - center) / width;
+        var p = d > 1 ? 1 : d;
+
+        list[i].style.transform = 'translateY(' + (p * 12) + 'px) scale(' + (1 - p * 0.08) + ')';
+        list[i].style.opacity = (1 - p * 0.3).toFixed(3);
+        list[i].style.zIndex = String(100 - Math.round(p * 10));
+      }
+    }
+
+    function schedule(unit) {
+      if (unit.frame) { return; }
+      unit.frame = window.requestAnimationFrame(function () { paint(unit); });
+    }
+
+    function syncAll() {
+      for (var i = 0; i < units.length; i++) { schedule(units[i]); }
+    }
+
+    function onModeChange() { syncAll(); }
+
+    function bindQuery(query) {
+      if (!query) { return; }
+      if (typeof query.addEventListener === 'function') {
+        query.addEventListener('change', onModeChange, { passive: true });
+      } else if (typeof query.addListener === 'function') {
+        query.addListener(onModeChange);
+      }
+    }
+
+    for (var u = 0; u < units.length; u++) {
+      (function (unit) {
+        unit.el.addEventListener('scroll', function () { schedule(unit); }, { passive: true });
+      })(units[u]);
+    }
+
+    window.addEventListener('resize', syncAll, { passive: true });
+    bindQuery(desktopQuery);
+    bindQuery(reduceQuery);
+
+    // 首屏先跑一次：等布局稳定后再算，当前卡在最上、邻卡退后
+    window.requestAnimationFrame(function () {
+      window.setTimeout(syncAll, 0);
+    });
+  }
+
   onReady(function () {
     var body = document.body;
     var pageId = body.getAttribute('data-page') || '';
@@ -227,5 +334,8 @@
         }
       }
     }
+
+    /* ---------- 三种场景：手机端叠压卡堆 ---------- */
+    initCardStacks();
   });
 })();

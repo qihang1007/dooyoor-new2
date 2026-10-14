@@ -69,7 +69,8 @@
       return CONDITION_FALLBACK[id] || '';
     }
 
-    var state = { category: 'all', condition: 'all', query: '', sort: 'featured' };
+    // 默认状态：分类「全部」+ 成色「全新」。URL 参数优先，见 readStateFromUrl()
+    var state = { category: 'all', condition: 'new', query: '', sort: 'featured' };
 
     /* ---------- URL 读取 ---------- */
     function getParam(name) {
@@ -96,7 +97,7 @@
       }
     }
 
-    // 非法值一律回落到默认：分类 all、成色 all、排序 featured、关键词空
+    // 非法值一律回落到默认：分类 all、成色 new、排序 featured、关键词空
     function readStateFromUrl() {
       var c = String(getParam('c') || '').trim();
       if (CATEGORIES.indexOf(c) !== -1) { state.category = c; }

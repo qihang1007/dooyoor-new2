@@ -2461,34 +2461,43 @@ main { padding-bottom: calc(var(--bottomnav-h) + var(--safe-b) + 32px); }
 .pdp-short-story .quote p:last-child { margin-bottom: 0; }
 
 /* ==========================================================================
-   32. 三种场景：桌面三栏 → 手机横向滑动三页
-   只作用于 .pillars--swipe，不影响其它复用 .pillars 的板块。
+   32. 三种场景：桌面三栏 → 手机叠压卡堆（居中吸附 + 逐张揭开）
+   只作用于 .pillars--stack，不影响其它复用 .pillars 的板块。
+   桌面端（≥768px）不加任何规则，保持原有三栏 grid。
    ========================================================================== */
-.pillars--swipe-hint { display: none; }
+.pillars--stack-hint { display: none; }
 
 @media (max-width: 767px) {
-  .pillars--swipe {
+  .pillars--stack {
     display: flex;
     flex-wrap: nowrap;
-    gap: 12px;
+    gap: 0;                        /* 叠压靠负 margin，不用 gap */
     overflow-x: auto;
+    overflow-y: hidden;
     scroll-snap-type: x mandatory;
-    scroll-padding-inline: var(--gutter);
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-    padding-inline: var(--gutter);
+    scroll-padding-inline: 6%;     /* 与下面的 padding 配合，让 88% 宽的卡居中 */
+    padding-inline: 6%;
     margin-inline: calc(var(--gutter) * -1);
-    padding-bottom: 6px;
+    padding-bottom: 8px;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
   }
-  .pillars--swipe::-webkit-scrollbar { display: none; }
+  .pillars--stack::-webkit-scrollbar { display: none; }
 
-  .pillars--swipe > .pillar {
-    flex: 0 0 84%;
+  .pillars--stack > .pillar {
+    flex: 0 0 88%;
     min-width: 0;
-    scroll-snap-align: start;
+    margin-inline: -14%;           /* 相邻卡片互相叠压，形成卡堆 */
+    scroll-snap-align: center;
+    transform-origin: 50% 100%;    /* 从底部缩放，像牌堆往下压 */
+    transition: transform .28s var(--ease), opacity .28s var(--ease);
+    will-change: transform;
   }
+  /* 首尾卡片的负 margin 方向要抵消，避免出现空白 */
+  .pillars--stack > .pillar:first-child { margin-left: 0; }
+  .pillars--stack > .pillar:last-child { margin-right: 0; }
 
-  .pillars--swipe-hint {
+  .pillars--stack-hint {
     display: block;
     margin-top: 10px;
     text-align: center;
