@@ -635,14 +635,12 @@
   }
 
   function shippingLines() {
-    var ship = (window.DY_CONFIG.shipping) || {};
-    var free = Number(ship.freeThreshold);
-    var fee = Number(ship.fee);
-    if (!isFinite(free)) { free = 999; }
-    if (!isFinite(fee)) { fee = 20; }
+    var ship = (window.DY_CONFIG && window.DY_CONFIG.shipping) || {};
+    var policy = ship.policy
+      ? String(ship.policy)
+      : '除西藏、新疆、台湾、香港、澳门地区外，全国包邮；上述地区运费另计。';
     var lines = SHIP_FIXED.slice();
-    lines.splice(1, 0, '满 ' + DY.money(free) + ' 免运费，未满收 ' + DY.money(fee)
-      + ' 运费。限量款如遇生产周期，预计发货时间会在商品页标注。');
+    lines.splice(1, 0, '运费：' + policy);
     return lines;
   }
 

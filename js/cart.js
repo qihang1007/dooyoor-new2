@@ -8,7 +8,7 @@
 
   var CFG = window.DY_CONFIG || {};
   var PRODUCTS = CFG.products || [];
-  var SHIPPING = CFG.shipping || { freeThreshold: 999, fee: 20 };
+  var SHIPPING = CFG.shipping || { freeThreshold: 0, fee: 0 };
   var CURRENCY = CFG.currency || { symbol: '¥', decimals: 0 };
 
   var CART_KEY = 'dooyoor.cart.v1';

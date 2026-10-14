@@ -2,7 +2,7 @@
    dooyoor 㛊䎟 — 购物袋页
    依赖：js/site-config.js, js/cart.js, js/main.js
         （可选）js/auth.js, js/wallet.js, js/orders.js —— 缺失时优雅降级，不抛异常
-   职责：渲染购物袋列表与金额、数量增减、移除、优惠码、免运费进度、
+   职责：渲染购物袋列表与金额、数量增减、移除、优惠码、包邮政策提示（含除外地区）、
         收货信息表单校验、把结算整单交给 DY.orders.checkout
    只使用 DY 公开 API：DY.escape / DY.money / DY.toast / DY.cart.*
         及 DY.auth.isLoggedIn / DY.wallet.balance / DY.wallet.discountUnlocked / DY.orders.checkout
@@ -12,7 +12,7 @@
   'use strict';
 
   var CFG = window.DY_CONFIG || {};
-  var SHIPPING = CFG.shipping || { freeThreshold: 999, fee: 20 };
+  var SHIPPING = CFG.shipping || { freeThreshold: 0, fee: 0 };
 
   var ICON_DEC = '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M5 12h14"/></svg>';
   var ICON_INC = '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>';
@@ -155,24 +155,38 @@
         + '</article>';
     }
 
-    /* ---------- 免运费进度 ---------- */
-    function renderShipBar(subtotal, discount) {
-      var threshold = Number(SHIPPING.freeThreshold) || 0;
-      var base = Math.max(0, subtotal - discount);
-      var progress = 1;
-      var text = '已免运费';
+    /* ---------- 包邮政策行 + 除外地区提示 ---------- */
+    /* 关键词与提示文案一律取自 DY_CONFIG.shipping，缺失时降级不报错 */
+    var EXCLUDED_REGIONS = (SHIPPING && SHIPPING.excludedRegions) ? SHIPPING.excludedRegions : [];
+    var POLICY_TEXT = (SHIPPING && SHIPPING.policy)
+      ? String(SHIPPING.policy)
+      : '全国包邮（西藏、新疆、台湾、香港、澳门除外）';
+    var EXCLUDED_NOTE = (SHIPPING && SHIPPING.excludedNote) ? String(SHIPPING.excludedNote) : '';
 
-      if (threshold > 0 && base < threshold) {
-        progress = base / threshold;
-        text = '再买 ' + money(threshold - base) + ' 即免运费';
+    /* 详细地址里出现任一除外地区关键词即为「运费另计」地区 */
+    function isExcludedAddress() {
+      var input = formField('address');
+      if (!input || !EXCLUDED_REGIONS.length) { return false; }
+      var value = String(input.value || '');
+      for (var i = 0; i < EXCLUDED_REGIONS.length; i++) {
+        var region = EXCLUDED_REGIONS[i];
+        if (region && value.indexOf(String(region)) !== -1) { return true; }
       }
+      return false;
+    }
 
-      progress = Math.min(1, Math.max(0, progress));
-      var value = progress.toFixed(3);
+    function setShipProgress(value) {
+      if (shipBar && shipBar.style) { shipBar.style.setProperty('--p', value); }
+      if (shipFill && shipFill.style) { shipFill.style.setProperty('--p', value); }
+    }
 
-      if (shipBar) { shipBar.style.setProperty('--p', value); }
-      if (shipFill) { shipFill.style.setProperty('--p', value); }
-      if (shipText) { shipText.innerHTML = esc(text); }
+    /* 全国包邮：进度条恒为满格；地址命中除外地区时改提示并清空进度（仅提示，不阻止下单） */
+    function renderShipBar() {
+      var excluded = isExcludedAddress();
+      setShipProgress(excluded ? '0' : '1');
+      if (shipText) {
+        shipText.innerHTML = esc(excluded && EXCLUDED_NOTE ? EXCLUDED_NOTE : POLICY_TEXT);
+      }
     }
 
     /* ---------- 支付明细：可用抵扣 / 当前余额（数值全部来自 wallet 层） ---------- */
@@ -294,6 +308,13 @@
       }
     }
 
+    /* 详细地址变化即刷新包邮提示（只提示，不阻止下单） */
+    var addressField = formField('address');
+    if (addressField) {
+      addressField.addEventListener('input', function () { renderShipBar(); });
+      addressField.addEventListener('change', function () { renderShipBar(); });
+    }
+
     /* ---------- 渲染（首次 DOMContentLoaded 与 dy:cart-change 共用） ---------- */
     function render() {
       var items = DY.cart.items();
@@ -318,7 +339,7 @@
       setText('[data-sum-subtotal]', money(subtotal));
       setText('[data-sum-total]', money(total));
 
-      /* 运费：满额免运费时显示「免运费」并加 .summary-row--free */
+      /* 运费：全国包邮恒为 0 时显示「免运费」并加 .summary-row--free */
       if (shipRow) {
         var free = count > 0 && shipping === 0;
         if (free) {
@@ -350,7 +371,7 @@
           : '输入优惠码，如 WELCOME10 享 9 折');
       }
 
-      renderShipBar(subtotal, discount);
+      renderShipBar();
       renderWallet();
     }
 

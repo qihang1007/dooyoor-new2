@@ -35,7 +35,7 @@
 | 价格带 | 上衣 ¥880–1280 / 裤子 ¥580–1080 / 裙子 ¥780–920 / 包包 ¥220–460 |
 | 主色 | 靛蓝 `#1F3B63`，深 `#142943`，浅 `#2E5288`，浅底 `#EEF2F8` |
 | 辅助色 | 铜棕缝线 `#A85A16`→`#C97A2B`（五金 / 认证二手 / 警示）；石洗灰 `#4A5560` |
-| 配送政策 | 满 ¥999 免运费，未满 ¥20；30 天无理由，认证二手 7 天且需保持成色 |
+| 配送政策 | 除西藏、新疆、台湾、香港、澳门地区外全国包邮，上述地区运费另计；30 天无理由，认证二手 7 天且需保持成色 |
 
 品牌叙事主轴（所有页面文案必须与之一致）：
 > 我们只做能穿很多年的衣服。少一点款式，好一点面料，稳一点版型。
@@ -236,7 +236,7 @@ dooyoor-site/
         <a class="drawer-link" href="account.html">我的账户</a>
       </nav>
       <div class="drawer-foot">
-        <p class="drawer-note">满 ¥999 免运费 · 认证二手 7 天无理由</p>
+        <p class="drawer-note">全国包邮（西藏、新疆、台湾、香港、澳门除外） · 认证二手 7 天无理由</p>
         <a class="drawer-mail" href="mailto:hello@dooyoor.com">hello@dooyoor.com</a>
       </div>
     </aside>
@@ -392,7 +392,7 @@ dooyoor-site/
 window.DY_CONFIG = {
   brand:   { name, nameCn, tagline, taglineEn, founded, city, email, phone, wechat, redbook, address, hours, story[] },
   currency:{ symbol:"¥", code:"CNY", decimals:0 },
-  shipping:{ freeThreshold:999, fee:20 },
+  shipping:{ freeThreshold:0, fee:0, excludedRegions:["西藏","新疆","台湾","香港","澳门"], policy:"全国包邮（西藏、新疆、台湾、香港、澳门除外）", excludedNote:"该地区运费另计，下单后客服会与你确认。" },
   nav:     [ {id,name,href} ],
   collections: [ { id, name, en, href, image, note } ],   // 4 项
   products:    [ { id, name, en, category, categoryName, price, compareAt, badge, colors[], sizes[],
@@ -441,13 +441,13 @@ window.DY_CONFIG = {
 
 ### 7.1 `index.html` — 首页（PAGE_ID `index`，只加载 main.js）
 
-1. **Hero** `.hero`：`.hero-media` 用 `assets/hero.svg`（`<img>` 带 `alt="dooyoor 当季系列"`），`.hero-body` 内含 `.eyebrow`（"2025 春夏季"）、`.hero-title`、`.hero-sub`、`.hero-cta`（`.btn--primary` → `shop.html`，`.btn--outline` → `about.html`）、`.hero-meta` 三个小指标（"一物一码上链 / 2 款认证二手在售 / 满 ¥999 免运费"）。
+1. **Hero** `.hero`：`.hero-media` 用 `assets/hero.svg`（`<img>` 带 `alt="dooyoor 当季系列"`），`.hero-body` 内含 `.eyebrow`（"2025 春夏季"）、`.hero-title`、`.hero-sub`、`.hero-cta`（`.btn--primary` → `shop.html`，`.btn--outline` → `about.html`）、`.hero-meta` 三个小指标（"一物一码上链 / 2 款认证二手在售 / 全国包邮"）。
 2. **系列入口** `.collection-grid`：由 `DY_CONFIG.collections` 渲染 4 张 `.collection-card`（`.collection-media` 用 `col-01…04.svg`，`.collection-label` 显示中英文名）。
 3. **精选商品** `.product-grid`：渲染 `products` 前 4 件 `.product-card`；`.section-head` 右侧放"查看全部"链接。
 4. **工艺三原则** `.pillars`：由 `pillars` 渲染 3 个 `.pillar`（图标 + 标题 + 说明）。
 5. **面料横条**：`<section class="section section--ink">`，两栏：左 `assets/look-01.svg`，右文字讲面料（长绒棉 / 美利奴羊毛 / 天丝），必须出现"我们只做能穿很多年的衣服"。
 6. **Lookbook** `.lookbook`：`look-02.svg` + 一段引语 `.quote`。
-7. **服务承诺**：三个 `.pillar` 用图标 卡车 / 循环退换 / 盾牌 —— 满 ¥999 免运费（未满 ¥20）、全新 30 天 / 认证二手 7 天无理由退换、一物一码可溯源。
+7. **服务承诺**：三个 `.pillar` 用图标 卡车 / 循环退换 / 盾牌 —— 全国包邮（西藏、新疆、台湾、香港、澳门除外）、全新 30 天 / 认证二手 7 天无理由退换、一物一码可溯源。
 
 ### 7.2 `shop.html` — 全部商品（PAGE_ID `shop`，加载 `js/shop.js`）
 
@@ -469,7 +469,7 @@ window.DY_CONFIG = {
 3. `.option-group` 尺码：`.size-list` 内 `.size-btn`；未选尺码时加入购物袋要报错提示；提供"尺码指南"按钮打开尺码表。
 4. `.qty`：`.qty-btn`（减）+ `.qty-input`（`<input type="text" inputmode="numeric" value="1" readonly>`）+ `.qty-btn`（加），范围 1–9。
 5. `.pdp-actions`：`.btn--primary.btn--block` 加入购物袋（调 `DY.cart.add`，成功 `DY.toast`）、`.btn--outline.btn--block` 立即购买（加入后跳 `cart.html`）。
-6. `.pdp-promise`：三个小项（卡车 满 ¥999 免运费 / 循环退换 全新 30 天、认证二手 7 天无理由 / 盾牌 一物一码已上链）。
+6. `.pdp-promise`：三个小项（卡车 全国包邮（西藏、新疆、台湾、香港、澳门除外） / 循环退换 全新 30 天、认证二手 7 天无理由 / 盾牌 一物一码已上链）。
 7. `.accordion`：4 项 —— 面料与工艺（`fabric`）、版型与尺码（`fit` + `.size-table`）、洗护建议（`care` 列表）、配送与退换（固定文案）。用 `<button class="accordion-head" aria-expanded="false">` + `.accordion-body`，JS 切换。
 8. `.related`：同 `category` 的其他商品（最多 4 件，不足用其他商品补齐）渲染为 `.product-card`。
 
@@ -488,14 +488,14 @@ window.DY_CONFIG = {
 
 ### 7.5 `cart.html` — 购物袋（PAGE_ID `cart`，加载 `js/cart-page.js`）
 
-1. `.page-head`：`.h1` "购物袋" + `.lead`（满 ¥999 免运费提示）。
+1. `.page-head`：`.h1` "购物袋" + `.lead`（全国包邮（西藏、新疆、台湾、香港、澳门除外）提示）。
 2. `.cart-layout` 两栏：左 `.cart-list`，右 `.summary`（移动端 summary 在下方，不 sticky）。
 3. `.cart-list` 由 `DY.cart.items()` 渲染 `.cart-item`：`.cart-item-media`（图，链接到 `product.html?id=`）、`.cart-item-info`（名称、英文名、尺码、单价）、`.cart-item-actions`（`.qty` 增减、`移除` 按钮 `.link-btn`）。数量变化即时重算。
 4. 空购物袋显示 `.cart-empty`：说明 + `.btn--primary` → `shop.html`（"去挑一件"）。空态时隐藏 `.cart-layout` 与结算按钮。
 5. `.summary`：`.summary-row` 小计、运费（免运费时显示"免运费"，否则金额）、优惠（有优惠时显示负值）、`.summary-total` 合计。
 6. `.promo-form`：输入优惠码 + 应用按钮；`WELCOME10` 提示"已应用：9 折"，错误码提示"优惠码无效或已过期"。
 7. 结算按钮 `.btn--primary.btn--block`："去结算"——无支付后端，点击后 `DY.toast("演示站点：结算功能待接入支付")`。
-8. **免运费进度条** `.ship-bar`：未达标显示"再买 ¥N 即免运费"，进度用 JS 设置 `--p` 变量。
+8. **包邮政策条** `.ship-bar`：显示"全国包邮（西藏、新疆、台湾、香港、澳门除外）"，进度恒为满格（JS 设置 `--p` 为 `1`）；详细地址含除外地区关键词时文案改为"该地区运费另计，下单后客服会与你确认。"并把 `--p` 置 `0`（仅提示，不阻止下单）。
 9. `cart-page.js` 必须监听 `dy:cart-change` 重新渲染。
 
 ### 7.6 `contact.html` — 联系我们（PAGE_ID `contact`，加载 `js/contact.js`）

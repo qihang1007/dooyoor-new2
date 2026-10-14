@@ -29,7 +29,7 @@
   var USERS_KEY = 'dooyoor.users.v1';
   var PREOWNED_KEY = (typeof CFG.preownedKey === 'string' && CFG.preownedKey)
     ? CFG.preownedKey : 'dooyoor.preowned.v1';
-  var SHIPPING = CFG.shipping || { freeThreshold: 999, fee: 20 };
+  var SHIPPING = CFG.shipping || { freeThreshold: 0, fee: 0 };
   var STATUS_FALLBACK = ['pending', 'shipped', 'done', 'refund'];
 
   var MSG_WALLET = '钱包模块未就绪';
@@ -534,8 +534,8 @@
     if (!(discount > 0)) { discount = 0; }
     if (discount > subtotal) { discount = subtotal; }
 
-    /* 步骤 5：运费按「减完优惠的金额」判断免运费门槛 */
-    var freeThreshold = num(SHIPPING.freeThreshold, 999);
+    /* 步骤 5：运费按「减完优惠的金额」判断免运费门槛（门槛与费用一律读 DY_CONFIG.shipping） */
+    var freeThreshold = num(SHIPPING.freeThreshold, 0);
     var fee = num(SHIPPING.fee, 0);
     var shipping = 0;
     if (typeof cart.shipping === 'function') {
